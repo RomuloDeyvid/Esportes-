@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+.quantidade::-webkit-inner-spin-button {
+    all: unset; 
+}
+
 body {
     height: 100vh;
 }
@@ -311,6 +315,16 @@ footer {
     line-height: normal;
 }
 
+#maisInfo {
+    border: none;
+    color: #737373;
+    text-align: right;
+    font-family: "Open Sans Hebrew";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 .btnFinalizar {
     border-radius: 0.3125rem;
