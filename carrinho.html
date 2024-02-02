@@ -22,11 +22,11 @@
 
             <section class="cabeçario">
                 <div class="titulo">
-                    <h1>MEU CARRINHO<span>.</span></h1>
+                    MEU CARRINHO<span>.</span>
                 </div>
-                <div class="filtro">
+                <div class="filtroTodos">
                     <div class="checkFiltro">
-                        <input type="checkbox" id="selecionarTudo">
+                        <input type="checkbox" name="todos" id="selecionarTudo">
                         <label for="selecionarTudo">selecionar tudo</label>
                     </div>
                     <div class="seletorFiltro">
@@ -39,7 +39,7 @@
             <div class="todosProduto">
                 <div class="produtos">
 
-                    <input type="checkbox">
+                    <input name="checkS001" id="checkS001" type="checkbox">
                     <div class="imagemCarrinho"><img src="src/imagens/carrinho/a001.png" alt=""></div>
                     <div class="conteudoProduto">
 
@@ -49,11 +49,13 @@
                         </div>
                         
                         <div class="seletoProduto">
-                            <select name="cor" id="cor">
+                            <select name="corS001" id="corS001" class="cor">
                                 <option value="">Azul Marinho</option>
                             </select>
-                            <select name="tamanho" id="tamanho">
-                                <option value="">Tamanho</option>
+                            <select name="tamanhoS001" id="tamanhoS001" class="tamanho">
+                                <option value="p">Tamanho <b>P</b></option>
+                                <option value="m">Tamanho <span>M</span></option>
+                                <option value="g">Tamanho <span>G</span></option>
                             </select>
                         </div>
 
@@ -72,7 +74,7 @@
 
                 <div class="produtos">
 
-                    <input type="checkbox">
+                    <input name="checkC001" id="checkC001" type="checkbox">
                     <div class="imagemCarrinho"><img src="src/imagens/carrinho/c21c931ba7dd2dd8b5f5b9bcc555d027.png" alt=""></div>
                     <div class="conteudoProduto">
 
@@ -82,11 +84,13 @@
                         </div>
                         
                         <div class="seletoProduto">
-                            <select name="cor" id="cor">
+                            <select name="corC001" id="corC001" class="cor">
                                 <option value="">Azul Marinho</option>
                             </select>
-                            <select name="tamanho" id="tamanho">
-                                <option value="">Tamanho</option>
+                            <select name="tamanhoC001" id="tamanhoC001" class="tamanho">
+                                <option value="p">Tamanho <span>P</span></option>
+                                <option value="m">Tamanho <span>M</span></option>
+                                <option value="g">Tamanho <span>G</span></option>
                             </select>
                         </div>
 
@@ -105,7 +109,7 @@
 
                 <div class="produtos">
 
-                    <input type="checkbox">
+                    <input name="checkC002" id="checkC002" type="checkbox">
                     <div class="imagemCarrinho"><img src="src/imagens/carrinho/a003.png" alt=""></div>
                     <div class="conteudoProduto">
 
@@ -115,8 +119,10 @@
                         </div>
                         
                         <div class="seletoProduto">
-                            <select name="tamanho" id="tamanho">
-                                <option value="">Tamanho</option>
+                            <select name="tamanhoC002" id="tamanhoC002" class="tamanho">
+                                <option value="p">Tamanho <span>P</span></option>
+                                <option value="m">Tamanho <span>M</span></option>
+                                <option value="g">Tamanho <span>G</span></option>
                             </select>
                         </div>
 
@@ -153,7 +159,11 @@
                     <div class="resumoPedido">
                         Resumo do pedido <span>(2) + frete</span>
                     </div>
-                    <div></div>
+                    <div>
+                        <select name="maisInfo" id="maisInfo">
+                            <option value="">mais detalhes</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div>
