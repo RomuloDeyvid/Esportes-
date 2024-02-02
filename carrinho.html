@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/css/carrinho.css">
+        
+    </head>
+<body>
+    <header>
+        
+    </header>
+
+    <div id="conteudo">
+        <div class="tela">
+
+            <section class="cabeçario">
+                <div class="titulo">
+                    <h1>MEU CARRINHO<span>.</span></h1>
+                </div>
+                <div class="filtro">
+                    <div class="checkFiltro">
+                        <input type="checkbox" id="selecionarTudo">
+                        <label for="selecionarTudo">selecionar tudo</label>
+                    </div>
+                    <div class="seletorFiltro">
+                        <select name="filtrar" id="filtro">
+                            <option value="">filtrar</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <div class="todosProduto">
+                <div class="produtos">
+
+                    <input type="checkbox">
+                    <div class="imagemCarrinho"><img src="src/imagens/carrinho/a001.png" alt=""></div>
+                    <div class="conteudoProduto">
+
+                        <div class="descriçãoProduto">
+                            <div>Short Feminino Toda Casual Caminhada</div>
+                            <p>Short Feminino caminhada com detalhe dry. Esse short veste muito bem e é super...</p>
+                        </div>
+                        
+                        <div class="seletoProduto">
+                            <select name="cor" id="cor">
+                                <option value="">Azul Marinho</option>
+                            </select>
+                            <select name="tamanho" id="tamanho">
+                                <option value="">Tamanho</option>
+                            </select>
+                        </div>
+
+                        <div class="preçoIcon">
+                            <div class="preço">
+                                R$ 37,31
+                            </div>
+                            <div class="contadorIcon">
+                                <div><input type="number"></div>
+                                <div class="iconeProduto"><a href=""><img src="src/icones/icon heart.svg" alt=""></a></div>
+                                <div class="iconeProduto"><a href=""><img src="src/icones/icon trash.svg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produtos">
+
+                    <input type="checkbox">
+                    <div class="imagemCarrinho"><img src="src/imagens/carrinho/c21c931ba7dd2dd8b5f5b9bcc555d027.png" alt=""></div>
+                    <div class="conteudoProduto">
+
+                        <div class="descriçãoProduto">
+                            <div>Camiseta New Era NFL Kansas City Chiefs Preta</div>
+                            <p>Feita com algodão, a peça possui design em preto e traz o escudo do time estampado...</p>
+                        </div>
+                        
+                        <div class="seletoProduto">
+                            <select name="cor" id="cor">
+                                <option value="">Azul Marinho</option>
+                            </select>
+                            <select name="tamanho" id="tamanho">
+                                <option value="">Tamanho</option>
+                            </select>
+                        </div>
+
+                        <div class="preçoIcon">
+                            <div class="preço">
+                                R$ 169,90
+                            </div>
+                            <div class="contadorIcon">
+                                <div><input type="number"></div>
+                                <div class="iconeProduto"><a href=""><img src="src/icones/icon heart.svg" alt=""></a></div>
+                                <div class="iconeProduto"><a href=""><img src="src/icones/icon trash.svg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produtos">
+
+                    <input type="checkbox">
+                    <div class="imagemCarrinho"><img src="src/imagens/carrinho/a003.png" alt=""></div>
+                    <div class="conteudoProduto">
+
+                        <div class="descriçãoProduto">
+                            <div>Camisa Athletico Paranaense II 23/24 s/n° Torcedor Umbro Ma...</div>
+                            <p>Perfeita para os torcedores da Arena da Baixada, essa camisa Athletico Paranaen...</p>
+                        </div>
+                        
+                        <div class="seletoProduto">
+                            <select name="tamanho" id="tamanho">
+                                <option value="">Tamanho</option>
+                            </select>
+                        </div>
+
+                        <div class="preçoIcon">
+                            <div class="preço">
+                                <span>R$ 359,90</span><br>
+                                R$ 159,90
+                            </div>
+                            <div class="contadorIcon">
+                                <div><input type="number"></div>
+                                <div class="iconeProduto"><a href=""><img src="src/icones/icon heart.svg" alt=""></a></div>
+                                <div class="iconeProduto"><a href=""><img src="src/icones/icon trash.svg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <section class="frete">
+                <div class="freteTexto">
+                    <span>Calcule a entrega</span><br>
+                    estimada para a sua região
+                </div>
+                <div class="freteInput">
+                    <input type="text" placeholder="00000-000">
+                    <a class="btnFrete"><img src="src/icones/icon search.svg" alt=""></a>
+                </div>
+
+                <div class="freteCep"><a href="">Não sei meu CEP</a></div>
+            </section>
+
+            <div class="resumo">
+                <div>
+                    <div class="resumoPedido">
+                        Resumo do pedido <span>(2) + frete</span>
+                    </div>
+                    <div></div>
+                </div>
+
+                <div>
+                    <div class="finalizar">
+                        <div class="valorTotal">R$  244,52</div>
+                        <div class="valorParcela">R$ 220,00 no pix<br> ou até 6x de R$ 40,75 no cartão</div>
+                        <button class="btnFinalizar">FINALIZAR PEDIDO</button>
+                    </div>
+
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer></footer>
+</body>
+</html>

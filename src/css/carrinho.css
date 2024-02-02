@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    min-height: 2.1rem;
+    width: 100%;
+    background: #3DD5F3;
+}
+
+footer {
+    height: 7rem;
+    width: 100%;
+    background: #3DD5F3;
+}
+
+#conteudo {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100% - 9.1rem);
+    width: 100%;
+}
+
+.tela {
+    max-width: 72.5rem;
+    width: 100%;
+}
+
+.cabeçario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 6rem;
+    margin: 2rem 1.5rem;
+}
+
+.titulo {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: solid 0.15rem #F5F5F5;
+    height: 3.5rem;
+}
+
+.titulo span {
+    color: #3DD5F3;
+}
+
+.filtro {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    align-items: center;
+}
+
+.checkFiltro {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#filtro {
+    color: #FFF;
+    font-family: "Open Sans Hebrew";
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 0.3125rem;
+    background: #000;
+}
+.seletorFiltro {
+}
+
+.todosProduto {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 2rem;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    max-height: 6.875rem;
+}
+
+.imagemCarrinho {
+    min-width: 6.875rem;
+    min-height: 6.875rem;
+}
+
+.imagemCarrinho img {
+    max-width: 6.875rem;
+    max-height: 6.875rem;
+    border-radius: 20px;
+}
+
+.conteudoProduto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descriçãoProduto div{
+    color: #000;
+    font-family: "Montserrat";
+    font-size: .625rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.descriçãoProduto p{
+    color: #737373;
+    font-family: "Open Sans";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+.seletoProduto{
+    display: flex;
+    align-items: start;
+}
+
+.seletoProduto select{
+    color: #000;
+    font-family: "Open Sans Hebrew";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #EDEDED;
+    border-radius: 0.3125rem;
+}
+
+.preçoIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.preço {
+    padding-bottom: 0.2rem;
+    color: #000;
+    font-family: "Open Sans Hebrew";
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.preço span {
+    color: #737373;
+    font-family: "Open Sans";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: line-through;
+}
+
+.contadorIcon {
+    display: flex;
+    align-items: end;
+    gap: 0.5rem;
+}
+
+.iconeProduto a{
+    align-items: center;
+}
+
+.contadorIcon input {
+    max-width: 2rem;
+    max-height: 1rem;
+    border-radius: 0.3125rem;
+    border: 1px solid #595959;
+    color: #595959;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.frete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.4rem;
+    background: #3DD5F3;
+    border-radius: 0.3125rem;
+    gap: 1rem;
+}
+
+.freteTexto {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.freteTexto span {
+    color:  #111;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.freteInput {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.freteInput input{
+    width: 5.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    border: 0.5px solid  #9C9C9C;
+    background:  #FFF;
+    text-align: center;
+    color:  #9C9C9C;
+    text-align: start;
+    font-family: "Montserrat";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 0.5rem;
+}
+
+.freteInput a{
+    align-items: center;
+    justify-content: center;
+}
+
+.freteInput a img{
+    width: 0.6875rem;
+    height: 0.6875rem;
+    
+}
+
+.freteCep a{
+    color:  #111;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.resumo {
+    display: flex;
+    min-width: 7rem;
+    justify-content: space-between;
+    align-items: start;
+    height: 11.5rem;
+    padding: 2rem 1.2rem 0;
+}
+
+.resumoPedido {
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resumoPedido span {
+    color: var(--C06, #9C9C9C);
+    font-family: "Open Sans";
+    font-size: .625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.btnFinalizar {
+    border-radius: 0.3125rem;
+    background:  #111;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 1.3rem;
+    width: 7rem;
+}
+
+.valorTotal {
+    color: #000;
+    font-family: "Montserrat";
+    text-align: right;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.valorParcela {
+    color: #737373;
+    text-align: right;
+    font-family: "Open Sans Hebrew";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (min-width: 753px) {
+    header {
+        height: 6rem;
+    }
+    footer {
+        height: 30.75rem;
+    }
+
+    #conteudo {
+        display: flex;
+        justify-content: center;
+        min-height: calc(100% - 36.75rem);
+        width: 100%;
+    }
+  }
