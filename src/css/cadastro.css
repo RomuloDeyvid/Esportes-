@@ -26,4 +26,272 @@ footer {
 #conteudo {
     min-height: calc(100% - 9.1rem);
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.formCadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloPagina {
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+/* -----------------Dados pessoais----------------- */
+
+/* ----------------Area conpartilhada------------------ */
+.dadosPessoais, .entrega {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.dadosPessoais {
+    grid-template-columns:  minmax(100px, 1fr)  minmax(100px, 1fr);
+    margin: 1rem 0;
+}
+
+.entrega {
+    grid-template-columns:  minmax(60%, 1fr)  minmax(80px, 1fr);
+}
+
+.areaDados, .areaEntrega {
+    font-size: 0.75rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    border-left: solid 3px #000;
+    padding-left: 0.4rem;
+}
+
+.entradaEstilo, .labelEstilo {
+    font-size: 0.625rem;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: rgba(115, 115, 115, 1);
+}
+
+.entradaEstilo {
+    height: 1.875rem;
+    border: solid 1px rgba(167, 165, 165, 1);
+    border-radius: 5px;
+}
+
+.labelEstilo {
+    margin-bottom: 0.5rem;
+}
+.aceitaTermo .labelEstilo , .aceitaTermo .labelEstilo a {
+    margin: 0;
+    color: #000;
+}
+/* ----------------Area conpartilhada------------------ */
+
+/* ---------------------Area Grid--------------------------- */
+
+/* --------------dados------------- */
+.areaDados{
+    grid-area: areaDados;
+}
+
+.areaNome{
+    grid-area: areaNome;
+    display: flex;
+    flex-direction: column;
+}
+
+.areaEmail{
+    grid-area: areaEmail;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.areaSenha{
+    grid-area: areaSenha;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.areaCpf{
+    grid-area: areaCpf;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.areaDadosGrid {
+    grid-template-areas:
+        "areaDados areaDados"
+        "areaNome areaNome"
+        "areaEmail areaEmail"
+        "areaSenha areaCpf"
+    ;
+}
+/* --------------dados------------- */
+
+/* --------------Endereço------------- */
+
+.areaEntrega{
+    grid-area: areaEntrega;  
+    margin-top: 2rem;
+}
+
+.areaEndereço{
+    grid-area: areaEndereço;  
+    display: flex;
+    flex-direction: column;  
+}
+
+.areaCep{
+    grid-area: areaCep;  
+    display: flex;
+    flex-direction: column;  
+}
+
+.areaBairro{
+    grid-area: areaBairro; 
+    display: flex;
+    flex-direction: column;   
+}
+
+.areaNumero{
+    grid-area: areaNumero; 
+    display: flex;
+    flex-direction: column;   
+}
+
+.areaCidade{
+    grid-area: areaCidade; 
+    display: flex;
+    flex-direction: column;   
+}
+
+.areaEstado{
+    grid-area: areaEstado;  
+    display: flex;
+    flex-direction: column;  
+}
+
+.areaEntregaGrid {
+    grid-template-areas: 
+    "areaEntrega areaEntrega"
+    "areaEndereço areaCep"
+    "areaBairro areaNumero"
+    "areaCidade areaEstado"
+    ;
+}
+
+/* --------------Endereço------------- */
+/* ---------------------Area Grid--------------------------- */
+.termos {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.aceitaTermo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.areaEstado select{
+    background: #595959;
+    color: rgba(237, 237, 237, 1);
+    padding-left: 0.5rem;
+
+}
+
+.btnSubmit {
+    font-size: 0.8rem;
+    width: 100px;
+    background: #000;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+/* -----------------Dados pessoais----------------- */
+
+
+@media (min-width: 770px) {
+
+    header {
+        height: 6rem;
+    }
+    footer {
+        height: 30.75rem;
+    }
+
+    #conteudo {
+        display: flex;
+        justify-content: center;
+        min-height: calc(100% - 36.75rem);
+        width: 100%;
+    }
+
+    .tituloPagina {
+        font-size: 3rem;
+    }
+
+    .areaDados, .areaEntrega {
+        font-size: 1.25rem;
+    }
+
+    .entradaEstilo, .labelEstilo {
+        font-size: 1.25rem;
+    }
+
+    .entradaEstilo {
+        height: 3.75rem;
+    }
+
+    .btnSubmit {
+        font-size: 1.5rem;
+        width: 12.5rem;
+        height: 3.688rem;
+    }
+
+    .cadastro {
+        max-width: 72.5rem;
+    }
+
+    .termos {
+        flex-direction: column;
+    }
+/* --------------grid area ---------------- */
+    .areaDadosGrid {
+        grid-template-areas:
+            "areaDados areaDados"
+            "areaNome areaCpf"
+            "areaEmail areaEmail"
+            "areaSenha ."
+        ;
+    }
+
+    .dadosPessoais {
+        grid-template-columns:  minmax(80%px, 1fr)  minmax(100px, 1fr);
+    }
+
+    .areaEntregaGrid {
+        grid-template-areas: 
+        "areaEntrega areaEntrega"
+        "areaCep areaNumero"
+        "areaEndereço areaBairro"
+        "areaCidade areaEstado"
+        ;
+    }
+/* --------------grid area ---------------- */
 }
