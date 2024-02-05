@@ -24,7 +24,6 @@ const corProdutoShort = new Seletor ("#corShort",".produtoShort .cores","ativado
 const tamanhoProdutoShort = new Seletor ("#tamanhoShort", ".produtoShort .tamanhos", "ativadoCorShort");
 const corProdutoCamiseta = new Seletor ("#corCamiseta",".produtoCamiseta .cores","ativadoCorShort");
 const tamanhoProdutoCamiseta = new Seletor ("#tamanhoCamiseta", ".produtoCamiseta .tamanhos", "ativadoCorShort");
-const corProdutoCamisa = new Seletor ("#corCamisa",".produtoCamisa .cores","ativadoCorShort");
 const tamanhoProdutoCamisa = new Seletor ("#tamanhoCamisa", ".produtoCamisa .tamanhos", "ativadoCorShort");
 
 
