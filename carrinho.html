@@ -37,26 +37,40 @@
                 </div>
             </section>
             <div class="todosProduto">
+
                 <div class="produtos">
 
-                    <input class="checkEstilo" name="checkS001" id="checkS001" type="checkbox">
+                    <input class="checkEstilo" name="checkShort" id="checkShort" type="checkbox">
                     <div class="imagemCarrinho"><img src="src/imagens/carrinho/a001.png" alt=""></div>
                     <div class="conteudoProduto">
 
                         <div class="descriçãoProduto">
-                            <div>Short Feminino Toda Casual Caminhada</div>
+                            <div class="nomeProduto">Short Feminino Toda Casual Caminhada</div>
                             <p>Short Feminino caminhada com detalhe dry. Esse short veste muito bem e é super...</p>
                         </div>
                         
                         <div class="seletoProduto">
-                            <select name="corS001" id="corS001" class="cor">
-                                <option selected="selected">Azul Marinho</option>
-                            </select>
-                            <select name="tamanhoS001" id="tamanhoS001" class="tamanho">
-                                <option value="p">Tamanho P</option>
-                                <option value="m">Tamanho <span>M</span></option>
-                                <option value="g">Tamanho <span>G</span></option>
-                            </select>
+                            <div class="coloração">
+                                <div class="corCirculo"></div>
+                                <div class="cor produtoShort">
+                                    <input placeholder="Azul Marinho" class="seletorCor" name="corShort" id="corShort" type="text">
+                                    <div class="cores">
+                                        <div class="itemCores">Preto<span></span></div>
+                                        <div class="itemCores">Azul Marinho<span></span></div>
+                                        <div class="itemCores">Branco<span></span></div>
+                                    </div>
+                                </div>
+                                <img class="imgSeta" src="src/icones/Vector 1.svg" alt="">
+                            </div>
+                            <div class="tamanho produtoShort">
+                                <img class="imgSeta" src="src/icones/Vector 1.svg" alt="">
+                                <input placeholder="Tamanho" class="seletorTamamho" name="tamanhoShort" id="tamanhoShort" type="text">
+                                <div class="tamanhos">
+                                    <div class="itemTamanho">Tamanho <span> P </span></div>
+                                    <div class="itemTamanho">Tamanho <span> M </span></div>
+                                    <div class="itemTamanho">Tamanho <span> G </span></div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="preçoIcon">
@@ -64,7 +78,12 @@
                                 R$ 37,31
                             </div>
                             <div class="contadorIcon">
-                                <div ><input class="quantidade" name="quantidadeS001" id="quantidadeS001" type="number"></div>
+                                <div class="contador Short">
+                                    <button class="btnContador btnMenos">-</button>
+                                    <input class="quantidade" name="quantidadeShort" id="quantidadeShort" type="number">
+                                    <button class="btnContador btnMais">+</button>
+                                </div>
+                                    
                                 <div class="iconeProduto"><a href="#"><img src="src/icones/icon heart.svg" alt=""></a></div>
                                 <div class="iconeProduto"><a href="#"><img src="src/icones/icon trash.svg" alt=""></a></div>
                             </div>
@@ -74,24 +93,37 @@
 
                 <div class="produtos">
 
-                    <input class="checkEstilo" name="checkC001" id="checkC001" type="checkbox">
+                    <input class="checkEstilo" name="checkCamiseta" id="checkCamiseta" type="checkbox">
                     <div class="imagemCarrinho"><img src="src/imagens/carrinho/c21c931ba7dd2dd8b5f5b9bcc555d027.png" alt=""></div>
                     <div class="conteudoProduto">
 
                         <div class="descriçãoProduto">
-                            <div>Camiseta New Era NFL Kansas City Chiefs Preta</div>
+                            <div class="nomeProduto">Camiseta New Era NFL Kansas City Chiefs Preta</div>
                             <p>Feita com algodão, a peça possui design em preto e traz o escudo do time estampado...</p>
                         </div>
                         
                         <div class="seletoProduto">
-                            <select name="corC001" id="corC001" class="cor">
-                                <option value="">Azul Marinho</option>
-                            </select>
-                            <select name="tamanhoC001" id="tamanhoC001" class="tamanho">
-                                <option value="p">Tamanho <span>P</span></option>
-                                <option value="m">Tamanho <span>M</span></option>
-                                <option value="g">Tamanho <span>G</span></option>
-                            </select>
+                            <div class="coloração">
+                                <div class="corCirculo"></div>
+                                <div class="cor produtoCamiseta">
+                                    <input placeholder="Azul Marinho" class="seletorCor" name="corCamiseta" id="corCamiseta" type="text">
+                                    <div class="cores">
+                                        <div class="itemCores">Preto<span></span></div>
+                                        <div class="itemCores">Azul Marinho<span></span></div>
+                                        <div class="itemCores">Branco<span></span></div>
+                                    </div>
+                                </div>
+                                <img class="imgSeta" src="src/icones/Vector 1.svg" alt="">
+                            </div>
+                            <div class="tamanho produtoCamiseta">
+                                <img class="imgSeta" src="src/icones/Vector 1.svg" alt="">
+                                <input placeholder="Tamanho" class="seletorTamamho" name="tamanhoCamiseta" id="tamanhoCamiseta" type="text">
+                                <div class="tamanhos">
+                                    <div class="itemTamanho">Tamanho <span> P </span></div>
+                                    <div class="itemTamanho">Tamanho <span> M </span></div>
+                                    <div class="itemTamanho">Tamanho <span> G </span></div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="preçoIcon">
@@ -99,8 +131,13 @@
                                 R$ 169,90
                             </div>
                             <div class="contadorIcon">
-                                <div><input class="quantidade" name="quantidadeC001" id="quantidadeC001" type="number"></div>
-                                <div class="iconeProduto"><a href="#"><img src="src/icones/icon heart.svg" alt=""></a></div>
+                                <div class="contador Camiseta">
+                                    <button class="btnContador btnMenos">-</button>
+                                    <input class="quantidade" name="quantidade" id="quantidadeCamiseta" type="number">
+                                    <button class="btnContador btnMais">+</button>
+                                </div>
+                                
+                                    <div class="iconeProduto"><a href="#"><img src="src/icones/icon heart.svg" alt=""></a></div>
                                 <div class="iconeProduto"><a href="#"><img src="src/icones/icon trash.svg" alt=""></a></div>
                             </div>
                         </div>
@@ -109,21 +146,28 @@
 
                 <div class="produtos">
 
-                    <input class="checkEstilo" name="checkC002" id="checkC002" type="checkbox">
-                    <div class="imagemCarrinho"><img src="src/imagens/carrinho/a003.png" alt=""></div>
+                    <input class="checkEstilo" name="checkCamisa" id="checkCamisa" type="checkbox">
+                    <div class="imagemCarrinho">
+                        <img src="src/imagens/carrinho/a003.png" alt="">
+                        <div class="promoçao">50% OFF</div>
+                    </div>
                     <div class="conteudoProduto">
 
                         <div class="descriçãoProduto">
-                            <div>Camisa Athletico Paranaense II 23/24 s/n° Torcedor Umbro Ma...</div>
+                            <div class="nomeProduto">Camisa Athletico Paranaense II 23/24 s/n° Torcedor Umbro Ma...</div>
                             <p>Perfeita para os torcedores da Arena da Baixada, essa camisa Athletico Paranaen...</p>
                         </div>
                         
                         <div class="seletoProduto">
-                            <select name="tamanhoC002" id="tamanhoC002" class="tamanho">
-                                <option value="p">Tamanho <span>P</span></option>
-                                <option value="m">Tamanho <span>M</span></option>
-                                <option value="g">Tamanho <span>G</span></option>
-                            </select>
+                            <div class="tamanho produtoCamisa">
+                                <img class="imgSeta" src="src/icones/Vector 1.svg" alt="">
+                                <input placeholder="Tamanho" class="seletorTamamho" name="tamanhoCamisa" id="tamanhoCamisa" type="text">
+                                <div class="tamanhos">
+                                    <div class="itemTamanho">Tamanho <span> P </span></div>
+                                    <div class="itemTamanho">Tamanho <span> M </span></div>
+                                    <div class="itemTamanho">Tamanho <span> G </span></div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="preçoIcon">
@@ -132,7 +176,11 @@
                                 R$ 159,90
                             </div>
                             <div class="contadorIcon">
-                                <div><input class="quantidade" name="quantidadeC002" id="quantidadeC002" type="number"></div>
+                                <div class="contador Camisa">
+                                    <button class="btnContador btnMenos">-</button>
+                                    <input class="quantidade" name="quantidade" id="quantidadeCamisa" type="number">
+                                    <button class="btnContador btnMais">+</button>
+                                </div>
                                 <div class="iconeProduto"><a href="#"><img src="src/icones/icon heart.svg" alt=""></a></div>
                                 <div class="iconeProduto"><a href="#"><img src="src/icones/icon trash.svg" alt=""></a></div>
                             </div>
