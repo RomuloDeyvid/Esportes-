@@ -24,6 +24,10 @@
     z-index: 2;
 }
 
+.seletorTamamho {
+
+}
+
 
 .cores, .tamanhos  {
     z-index: 1;
@@ -236,6 +240,7 @@ footer {
     font-size: .625rem;
     font-style: normal;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .descriçãoProduto p{
@@ -245,6 +250,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     margin: 0;
+    
 }
 
 .seletoProduto{
@@ -291,12 +297,13 @@ footer {
     height: 0.5rem;
     width: 0.5rem;
     border-radius: 50%;
-    background: #000;
     position: absolute;
     top: 4px;
     left: 0.1rem;
     z-index: 1;
 }
+
+
 
 .preçoIcon {
     display: flex;
@@ -510,6 +517,12 @@ footer {
 }
 /* -----------------resumo dos item pedidos---------------- */
 
+@media screen and (max-width: 900px) and (min-width: 600px){
+
+}
+
+
+
 @media (min-width: 770px) {
     header {
         height: 6rem;
@@ -523,17 +536,12 @@ footer {
         justify-content: center;
         min-height: calc(100% - 36.75rem);
         width: 100%;
+    
     }
 
     /* ----------Cabeçario do conteudo---------- */
     .titulo {
-        border: none;
         font-size: 3rem;
-    }
-
-    .cabeçario {
-        flex-direction: row;
-        border-bottom: solid 0.15rem #F5F5F5;
     }
 
     .filtroTodos {
@@ -730,3 +738,17 @@ footer {
     /* ---------------- select -----------------*/
 
   }
+
+@media (min-width: 900px) {
+
+    /* ----------Cabeçario do conteudo---------- */
+    .titulo {
+        border: none;
+        font-size: 3rem;
+    }
+
+    .cabeçario {
+        flex-direction: row;
+        border-bottom: solid 0.15rem #F5F5F5;
+    }
+}
