@@ -1,5 +1,8 @@
 /* --------------Navegação header ------------------------ */
-
+header{
+    width: 100%;
+    background: #3DD5F3;
+}
 #navegaHeader {
     height: 2.6rem;
     width: 100%;
