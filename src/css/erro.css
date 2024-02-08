@@ -1,0 +1,24 @@
+.elementos-erro{
+    width: 70%;
+    margin: 5em auto;
+    text-align: center;
+
+}
+.imagem-de-erro{
+    height: 545px;
+    width: 545px;
+    
+}
+.frase-de-erros{
+    font-family: var(--fonte-principal);
+    font-size: 48px;
+    font-weight: 700;
+    padding: 0.5em;
+}
+.descrição-de-erro{
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 1em;
+    color: #737373;
+}
