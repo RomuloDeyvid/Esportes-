@@ -20,11 +20,18 @@ body {
 
 header {
     width: 100%;
+    background: #3DD5F3;;
+}
+
+footer {
+    height: 7rem;
     background: #3DD5F3;
 }
 
 /* -----------pagina---------- */
 #conteudo {
+    display: flex;
+    justify-content: center;
     min-height: calc(100% - 9.6rem);
     width: 100%;
 }

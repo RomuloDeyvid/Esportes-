@@ -34,7 +34,7 @@
 footer {
     background-color: var(--A01);
     width: 100%;
-    min-height: 492px;
+    min-height: 7rem;
     display: flex;
     justify-content: center;
 }

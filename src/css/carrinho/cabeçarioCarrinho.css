@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 6rem;
-    margin: 2rem 1.5rem;
+    padding: 2rem 1.5rem;
 }
 
 .titulo {

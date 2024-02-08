@@ -11,15 +11,15 @@ export default class ValorTamanho {
     clickSeleciona(){
 
         this.pequeno.addEventListener('click', ()=> {
-            this.entradaTexto.value = "P"
+            this.entradaTexto.value = "Tamanho P"
         });
 
         this.medio.addEventListener('click', ()=> {
-            this.entradaTexto.value = "M"
+            this.entradaTexto.value = "Tamanho M"
         });
 
         this.grande.addEventListener('click', ()=> {
-            this.entradaTexto.value = "G"
+            this.entradaTexto.value = "Tamanho G"
         });
     }
 
