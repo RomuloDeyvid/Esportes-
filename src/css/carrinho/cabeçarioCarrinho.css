@@ -1,0 +1,51 @@
+.cabeçario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 6rem;
+    margin: 2rem 1.5rem;
+}
+
+.titulo {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: solid 0.15rem #F5F5F5;
+    height: 3.5rem;
+}
+
+.titulo span {
+    color: #3DD5F3;
+}
+
+.filtroTodos {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    align-items: center;
+}
+
+
+
+.checkFiltro {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#filtro {
+    height: 1.5rem;
+    width: 5rem;
+    padding: 0 0.5rem;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 0.3125rem;
+    background: #000;
+}
+/* ---------------Cabeçario da pagina---------------- */

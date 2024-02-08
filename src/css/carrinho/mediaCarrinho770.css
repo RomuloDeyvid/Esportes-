@@ -1,0 +1,239 @@
+@media screen and (max-width: 900px) and (min-width: 600px){
+
+}
+
+
+
+@media (min-width: 770px) {
+    header {
+        height: 6rem;
+    }
+
+    #conteudo {
+        display: flex;
+        justify-content: center;
+        min-height: calc(100% - 36.75rem);
+        width: 100%;
+    
+    }
+
+    /* ----------Cabeçario do conteudo---------- */
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .filtroTodos {
+        gap: 2rem;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+    
+    #selecionarTudo, .checkEstilo {
+        min-height: 1rem;
+        min-width: 1rem;
+        background-color: #000;
+    }
+
+    #selecionarTudo {
+        margin-top: 0.4rem;
+    }
+
+    #filtro{
+        font-size: 1.25rem;
+        width: 7.313rem;
+        height: 2.313rem;
+    }
+
+    #filtro option {
+        min-height: 2rem;
+        text-align: center;
+        
+    }
+    /* ----------Cabeçario---------- */
+
+    /* -----------Produtos-------------------- */
+    .produtos {
+        padding-bottom: 2rem;
+        border-bottom: solid 0.15rem #F5F5F5;
+        max-width: 68.88rem;
+        gap: 2rem;
+    }
+
+    .imagemCarrinho {
+        min-width: 18.75rem;
+        min-height: 18.75rem;
+    }
+
+    .promoçao {
+        width: 5.188rem;
+        height: 1.875rem;
+        left: 200px;
+        top: 15px;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+
+    .conteudoProduto {
+        min-width: 18.75rem;
+        min-height: 18.75rem;
+    }
+
+    .nomeProduto{
+        font-size: 2rem;
+    }
+
+    .descriçãoProduto p{
+        font-size: 1.1rem;
+    }
+
+    .tamanho, .cor {
+        min-width: 9.75rem;
+        min-height: 2.375rem;
+        font-size: 1rem;
+        border-radius: 15px;
+    }
+
+    .imgSeta{
+        height: 1.4rem;
+        width: 1.2rem;
+        left: 8.2rem;
+        top: 0.5rem;
+    }
+
+    .corCirculo {
+        height: 1rem;
+        width: 1rem;
+        left: 0.5rem;
+        top: 0.7rem;
+    }
+
+    .quantidade {
+        min-width: 5.813rem;
+        min-height: 1.875rem;
+        font-size: 1rem;
+        border-radius: 0.6rem;
+    }
+
+    .btnContador {
+        font-size: 2rem;
+        border-radius: 1rem;
+        height: 1.4rem;
+        width: 2rem;
+    }
+
+    .btnMenos {
+        left: 2.2rem;
+    }
+    
+    .btnMais {
+        right: 2.2rem;
+    }
+
+    .preço {
+        font-size: 1.625rem;
+    }
+
+    .preço span{
+        font-size: 1.1rem;
+    }
+
+    .iconeProduto a img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /* -----------Produtos-------------------- */
+
+    /* -------------------Frete----------------- */
+    .frete {
+        margin-top: 2rem;
+        height: 10rem;
+    }
+
+    .freteTexto{
+        font-size: 1.7rem;
+    }
+
+    .freteTexto span {
+        font-size: 1.7rem;
+    }
+
+    .freteInput input{
+        width: 21.875rem;
+        height: 3.75rem;
+        border-radius: 20px;
+        font-size: 1.5rem;
+    }
+
+    .freteInput a img{
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+
+    .freteCep a{
+        font-size: 1rem;
+    }
+    /* -------------------Frete----------------- */
+
+    /* ---------Resumo do pedido ---------- */
+
+    .resumo {
+        height: 18.688rem;
+        max-width: 72.5rem;
+    }
+
+    .resumoPedido, .valorTotal {
+        font-size: 2.25rem;
+    }
+
+    .resumoPedido span, .valorParcela {
+        font-size: 1.563rem;
+    }
+    
+    #maisInfo {
+        font-size: 1rem;
+    }
+
+    .btnFinalizar {
+        height: 3.688rem;
+        width: 17.125rem;
+        font-size: 1.5rem;
+    }
+    /* ---------Resumo do pedido ---------- */
+
+    /* ---------------- select -----------------*/
+    .cores, .tamanhos {
+        min-width: 9.75rem;
+        min-height: calc(2.375rem * 3);
+        top: 50px;
+    }
+
+    .itemCores, .itemTamanho {
+        min-height: 2.375rem
+    }
+
+    .seletorCor, .seletorTamamho {
+        min-width: 9.75rem;
+        min-height: 2.375rem;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        font-family: "Open Sans ";
+    }
+    /* ---------------- select -----------------*/
+
+  }
+
+@media (min-width: 900px) {
+
+    /* ----------Cabeçario do conteudo---------- */
+    .titulo {
+        border: none;
+        font-size: 3rem;
+    }
+
+    .cabeçario {
+        flex-direction: row;
+        border-bottom: solid 0.15rem #F5F5F5;
+    }
+}

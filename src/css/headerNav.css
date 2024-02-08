@@ -190,12 +190,16 @@
         display: none;
     }
 
+    .fixaBarra {
+        
+    }
+
     .links {
         display: flex;
         position: initial;
         align-items: center;
         justify-content: center;
-        height: 100%;
+        height: 6rem;
         width: 100%;
     }
 

@@ -24,11 +24,6 @@
     z-index: 2;
 }
 
-.seletorTamamho {
-
-}
-
-
 .cores, .tamanhos  {
     z-index: 1;
     display: none;
@@ -96,6 +91,8 @@
 .quantidade::-webkit-inner-spin-button {
     all: unset; 
 }
+
+
 /*-----------Contador------------*/
 
 
@@ -107,13 +104,6 @@ header {
     width: 100%;
     background: #3DD5F3;
 }
-
-footer {
-    height: 7rem;
-    width: 100%;
-    background: #3DD5F3;
-}
-
 
 /* -----------pagina---------- */
 #conteudo {
@@ -193,7 +183,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 63.688rem;
+    max-width: 28.188rem;
     column-gap: 0.5rem;
 }
 
@@ -420,6 +410,10 @@ footer {
     height: 0.6875rem;
 }
 
+#freteEntrada::-webkit-inner-spin-button {
+    all: unset; 
+}
+
 .freteCep a{
     color:  #111;
     text-align: start;
@@ -527,9 +521,6 @@ footer {
     header {
         height: 6rem;
     }
-    footer {
-        height: 30.75rem;
-    }
 
     #conteudo {
         display: flex;
@@ -560,18 +551,25 @@ footer {
         margin-top: 0.4rem;
     }
 
-    #filtro {
+    #filtro{
         font-size: 1.25rem;
         width: 7.313rem;
         height: 2.313rem;
     }
 
+    #filtro option {
+        min-height: 2rem;
+        text-align: center;
+        
+    }
     /* ----------Cabeçario---------- */
 
     /* -----------Produtos-------------------- */
     .produtos {
         padding-bottom: 2rem;
         border-bottom: solid 0.15rem #F5F5F5;
+        max-width: 68.88rem;
+        gap: 2rem;
     }
 
     .imagemCarrinho {

@@ -1,0 +1,51 @@
+/* estilo do seleto */
+.seletorCor, .seletorTamamho {
+    position: absolute;
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    background: transparent;
+    border-radius: 0.3125rem;
+    border: none;
+    height: 1rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.cores, .tamanhos  {
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #EDEDED;
+    height: 3rem;
+    width: 100%;
+    border-radius: 0.3125rem;
+    top: 20px;
+}
+
+.ativadoCorShort {
+    display: flex !important;
+}
+
+.itemCores, .itemTamanho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1rem;
+    width: 100%;
+    border-radius: 0.3125rem;
+}
+
+.itemCores:hover {
+    background: #00000079;
+}
+
+.itemTamanho:hover {
+    background: #00000079;
+}
+
+/* estilo do seleto */
