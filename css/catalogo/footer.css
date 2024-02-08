@@ -112,9 +112,6 @@ footer a:hover {
     margin-top: 80px;
 }
 
-
-@media (max-width: 1050px) {}
-
 @media (max-width: 768px) {
     footer {
         min-height: 113px;

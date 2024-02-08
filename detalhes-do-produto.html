@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do produto</title>
-
-    <!-- bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 
     <!-- fontes (open sans e montserrat) -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -15,65 +13,19 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/detalhes-do-produto/detalhes-do-produto.css">
     <link rel="stylesheet" href="./css/detalhes-do-produto/navbar.css">
+    <link rel="stylesheet" href="./css/detalhes-do-produto/footer.css">
 
     <!-- javascript -->
     <script src="./js/detalhes-do-produto.js" defer></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script> -->
 </head>
+
 <body>
-    <nav class="nav-bar navbar-expand-lg p-xl-4 justify-content-center align-items-center">
-        <div class="container-fluid d-flex flex-column align-items-center">
-            <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
-                <img src="src/imagens/marcas/logo.png" alt="" class="imagem_logo">
-                <div class="mb-lg-0 lista-nav"> 
-                        <a class="nav-link mx-2" href="#">Masculino</a>
-                        <a class="nav-link mx-2" href="#">Feminino</a>
-                        <a class="nav-link mx-2" href="#">Calçados</a>
-                        <a class="nav-link mx-2" href="#">Equipamentos</a>
-                </div>
-                <div class="formulario">
-                    <form class="barra-pesquisa" role="search">
-                    <input class="formulario barra-pesquisa-img" type="search" placeholder="O que você procura?" aria-label="Search">
-                    </form>
-                </div>
-                
-                <div class="lista-icones">
-                    <a href=""><img src="src/icones/icon heart.png" alt="" class="icones"></a>
-                    <a href=""><img src="src/icones/icon profile.png" alt="" class="icones"></a>
-                </div>
-                <div>
-                    <button class="btn botao-side-bar justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="src/icones/hamburguer.png" alt="" class="icone-hamburguer"></button>
-
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                      <div class="offcanvas-header ">
-                        <div class="d-flex flex-column">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        <a class="itens-side-bar mx-2" href="#">Esportes</a>
-                        <hr>
-                        <a class="itens-side-bar mx-2" href="#">Masculino</a>
-                        <hr>
-                        <a class="itens-side-bar mx-2" href="#">Feminino</a>
-                        <hr>
-                        <a class="itens-side-bar mx-2" href="#">Calçados</a>
-                        <hr>
-                        <a class="itens-side-bar mx-2" href="#">Equipamentos</a>
-                        <hr>
-                        </div>
-                      </div>
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
     <section class="conteudo-principal">
         <section class="inter-navegacao">
             <a href="#">home</a>
             <img src="./icon/Vector 3.svg" alt="">
-            <a href="#">nossos parceiros</a>
-            <img src="./icon/Vector 3.svg" alt="">
-            <a href="#">NFL</a>
+            <a href="./catalogo.html">todos os produtos</a>
             <img src="./icon/Vector 3.svg" alt="">
             <a href="#">Kansas City Chiefs</a>
         </section>
@@ -88,23 +40,23 @@
                     <li><img src="./img/mini foto lateral 3.jpg" alt=""></li>
                     <li><img src="./img/mini foto lateral 4.jpg" alt=""></li>
                 </ul>
-    
+
                 <div class="foto-principal">
                     <img src="./img/foto do item.jpg" alt="">
                 </div>
             </div>
-        
+
             <div class="descricao-do-produto">
                 <h1>Camiseta New Era NFL Kansas City Chiefs Preta</h1>
 
                 <div class="avaliacao-geral-do-produto">
-                <div class="estrelas-de-avaliacao">
-                    <img src="./icon/Star 1.svg" alt="">
-                    <p>4,2</p>
-                </div>
+                    <div class="estrelas-de-avaliacao">
+                        <img src="./icon/Star 1.svg" alt="">
+                        <p>4,2</p>
+                    </div>
 
-                <a href="#">mais detalhes</a>
- 
+                    <a href="#">mais detalhes</a>
+
                 </div>
 
                 <p class="descricao-detalhadada-do-produto"> Feita com algodão, a peça possui design em preto e traz o escudo do time estampado em destaque. </p>
@@ -125,7 +77,7 @@
                         <div class="escolha-de-cor">
                             <p class="cor-selecionada"><strong>Cor: </strong>Preta</p>
                         </div>
-    
+
                         <!-- fazer o checkbox -->
                         <ul class="quadro-de-cores">
                             <li><img src="./icon/Rectangle 95.svg" alt=""></li>
@@ -147,12 +99,12 @@
                                 <option value="extra-grande">XG</option>
                             </select>
                         </div>
-    
+
                         <a href="#">Guia de medidas</a>
                     </div>
                 </div>
-              
-                <div class="fim-do-produto">  
+
+                <div class="fim-do-produto">
                     <button>Comprar</button>
 
                     <div class="fim-do-produto-icones">
@@ -170,11 +122,10 @@
         <section class="comentarios">
             <div class="titulo-comentarios">
 
-                <!-- procurar algumar forma melhor de centralizar o item-->
                 <h1>Comentários</h1>
                 <p class="quantidade-de-comentarios">(456)</p>
             </div>
-            
+
             <div class="review">
                 <div class="comentario-de-usuario">
                     <div class="usuario">
@@ -182,15 +133,15 @@
                         <p class="produto-referido-no-comentario">Camiseta New Era NFL Kansas City Chiefs | Cor: Preta | Tamanho: M</p>
                         <p class="review-de-usuario">Sendo sincera, comprei essa camisa do Chiefs só porque é o time do boy da Taylor Swift. Tipo, não manjo muito de futebol americano, mas a estampa é linda, e a qualidade é muito boa. A entrega foi muuuito rápida, e o tamanho bateu certinho, amei muito. Mesmo não sendo maluca pelo time, curti a compra.</p>
                     </div>
-                    
+
                     <ul class="imagens-da-review">
                         <li><img src="./img/fotos da avaliação 1.jpg" alt=""></li>
                         <li><img src="./img/fotos da avaliação 2.jpg" alt=""></li>
                         <li><img src="./img/fotos da avaliação 3.jpg" alt=""></li>
                     </ul>
-                    
+
                 </div>
-                
+
 
 
                 <div class="avaliacao-do-produto">
@@ -202,7 +153,7 @@
                             <li><img src="./icon/Star 1.svg" alt=""></li>
                             <li><img src="./icon/Star 1.svg" alt=""></li>
                         </ul>
-    
+
                         <p class="avaliacao-em-nota">(5,0)</p>
                     </div>
 
@@ -215,7 +166,7 @@
 
             <div class="divisoria-entre-comentarios">
             </div>
-                
+
 
             <div class="review">
                 <div class="comentario-de-usuario">
@@ -242,7 +193,7 @@
                             <li><img src="./icon/Star 4.svg" alt=""></li>
                             <li><img src="./icon/Star 4.svg" alt=""></li>
                         </ul>
-    
+
                         <p class="avaliacao-em-nota">(2,0)</p>
                     </div>
 
@@ -251,52 +202,53 @@
                         <label for="checkbox-coracao-3" class="checkbox-coracao-label-2">Útil (124)</label>
                     </div>
                 </div>
-                
+
             </div>
 
-            <div  class="divisoria-entre-comentarios">
+            <div class="divisoria-entre-comentarios">
             </div>
 
-            <div class="carregar-mais">
+            <div class="carregar-mais mobile-in">
                 <a href="#">Carregar mais</a>
                 <a href="#"><img src="./icon/Vector 4.svg" alt=""></a>
             </div>
         </section>
 
         <h1 class="titulo-mais-como-este">Mais como este</h1>
-    </section>  
+    </section>
 
     <section class="mais-como-este">
         <div class="corpo-do-carrossel">
             <div class="carrossel-de-imagens">
                 <div class="carrossel">
-                    <button id="slide-anterior" class="botao-de-carrossel"><</button>
+                    <button id="slide-anterior" class="botao-de-carrossel">
+                    </button>
                     <ul class="lista-de-itens">
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 1.jpg" alt="">
-    
-                            <div class="descricao-do-item">  
+
+                            <div class="descricao-do-item">
                                 <div class="titulo-do-item">
                                     <h2>Converse Chuck 70</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>4,8</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">Em busca do futuro, o Chuck 70 Plus apresenta características clássicas do Chuck 70 e adiciona detalhes que conferem um visual único e disruptivo.</p>
-                                
+
                                 <div class="preco-e-icones2 m-preco-e-icones">
                                     <p class="desconto-do-item">R$ 350,00</p>
-        
+
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 280,00</p>
-                                        
+
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item">
                                             <label for="checkbox-coracao-item" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item">
                                             <label for="checkbox-carrinho-item" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -306,29 +258,29 @@
                         </li>
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 2.jpg" alt="">
-    
+
                             <div class="descricao-do-item">
                                 <div class="titulo-do-item">
                                     <h2>Calça Legging Oxer</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>4,4</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">A Calça Legging Feminina Oxer Sem Costura foi projetada para oferecer tudo o que você precisa em sua jornada de bem-estar.</p>
-    
-                                
+
+
                                 <div class="preco-e-icones m-preco-e-icones-2">
                                     <p class="desconto-do-item">R$ 99,90</p>
-    
+
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 85,00</p>
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item-2">
                                             <label for="checkbox-coracao-item-2" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item-2">
                                             <label for="checkbox-carrinho-item-2" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -338,30 +290,30 @@
                         </li>
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 3.jpg" alt="">
-    
-                            <div class="descricao-do-item">   
+
+                            <div class="descricao-do-item">
                                 <div class="titulo-do-item">
                                     <h2>Mochila Nike</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>4,2</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">Confeccionada em tecido poliéster, sendo 65% de fibras de poliéster reciclado, a mochila Nike Elemental é um modelo prático e versátil para usar no cotidiano.</p>
-    
-    
+
+
                                 <div class="preco-e-icones2 m-preco-e-icones-3">
                                     <p class="desconto-do-item">R$ 135,00</p>
-    
+
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 110,00</p>
-    
+
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item-3">
                                             <label for="checkbox-coracao-item-3" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item-3">
                                             <label for="checkbox-carrinho-item-3" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -371,31 +323,31 @@
                         </li>
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 4.jpg" alt="">
-    
+
                             <div class="descricao-do-item">
-    
-                                    
+
+
                                 <div class="titulo-do-item">
                                     <h2>Camisa Manches...</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>4,9</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">A Camisa do Real Madrid II 23 adidas é a escolha perfeita para os verdadeiros torcedores “Merengues” que buscam qualidade e estilo incomparáveis.</p>
-    
+
                                 <div class="preco-e-icones2 m-preco-e-icones-4">
                                     <p class="desconto-do-item">R$ 312,00</p>
-    
+
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 280,80</p>
-    
+
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item-4">
                                             <label for="checkbox-coracao-item-4" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item-4">
                                             <label for="checkbox-carrinho-item-4" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -405,29 +357,29 @@
                         </li>
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 5.jpg" alt="">
-    
+
                             <div class="descricao-do-item">
                                 <div class="titulo-do-item">
                                     <h2>Boné Aba Curva...</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>4,0</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">Clássico e confortável, o boné Nike Sportswear Heritage Heritage86 apresenta um design de seis painéis feito com tecido de sarja e um fechamento ajustável.</p>
-    
+
                                 <div class="preco-e-icones2 m-preco-e-icones-5">
                                     <p class="desconto-do-item">R$ 119,90</p>
-    
+
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 100,00</p>
-    
+
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item-5">
                                             <label for="checkbox-coracao-item-5" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item-5">
                                             <label for="checkbox-carrinho-item-5" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -437,26 +389,26 @@
                         </li>
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 6.jpg" alt="">
-                            
+
                             <div class="descricao-do-item">
                                 <div class="titulo-do-item">
                                     <h2>Camiseta Adidas...</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>5,0</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">Hora de dar um up no visual com o estilo descolado da Camiseta Adidas 3 Listras Feminina!</p>
-    
+
                                 <div class="preco-e-icones3 m-preco-e-icones-6 sem-desconto">
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 136,70</p>
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item-6">
                                             <label for="checkbox-coracao-item-6" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item-6">
                                             <label for="checkbox-carrinho-item-6" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -466,27 +418,27 @@
                         </li>
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 7.jpg" alt="">
-    
-                            <div class="descricao-do-item"> 
+
+                            <div class="descricao-do-item">
                                 <div class="titulo-do-item">
                                     <h2>Mochila Adidas Li...</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>4,5</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">Leve todos os seus itens com segurança e conforto! Perfeita para acompanhar sua rotina, a Mochila Adidas Linear garante qualidade e estilo numa só peça.</p>
-    
+
                                 <div class="preco-e-icones4 m-preco-e-icones-7 sem-desconto">
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 189,90</p>
-    
+
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item-7">
                                             <label for="checkbox-coracao-item-7" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item-7">
                                             <label for="checkbox-carrinho-item-7" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -496,27 +448,27 @@
                         </li>
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 8.jpg" alt="">
-    
-                            <div class="descricao-do-item">  
+
+                            <div class="descricao-do-item">
                                 <div class="titulo-do-item">
                                     <h2>Óculos de Sol Ha...</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>3,8</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">Contém: 1 óculos de sol e 1 estojo de tecido Composição armação: Policarbonato Cor predominante: Preta Comprimento da haste: 15 cm Peso aproximado: 20 g.</p>
-    
+
                                 <div class="preco-e-icones4 m-preco-e-icones-8 sem-desconto">
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 159,00</p>
-    
+
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item-8">
                                             <label for="checkbox-coracao-item-8" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item-8">
                                             <label for="checkbox-carrinho-item-8" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -526,30 +478,30 @@
                         </li>
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 9.jpg" alt="">
-    
+
                             <div class="descricao-do-item">
                                 <div class="titulo-do-item">
                                     <h2>Camisa Athletico...</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>3,7</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">Perfeita para os torcedores da Arena da Baixada, essa camisa Athletico Paranaense masculina apresenta escudo do time do lado esquerdo, gola careca e tiras cruzadas.</p>
-    
-    
+
+
                                 <div class="preco-e-icones2 m-preco-e-icones-9">
                                     <p class="desconto-do-item">R$ 359,90</p>
-    
+
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 169,90</p>
-    
+
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item-9">
                                             <label for="checkbox-coracao-item-9" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item-9">
                                             <label for="checkbox-carrinho-item-9" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -559,27 +511,27 @@
                         </li>
                         <li>
                             <img class="imagem-do-item" src="./img/Rectangle 10.jpg" alt="">
-    
-                            <div class="descricao-do-item">  
+
+                            <div class="descricao-do-item">
                                 <div class="titulo-do-item">
                                     <h2>Camisa Flamengo...</h2>
-    
+
                                     <div class="avaliacao-do-item">
                                         <img src="./icon/Star 1.svg" alt="">
                                         <p>4,1</p>
                                     </div>
                                 </div>
-    
+
                                 <p class="descricao-detalhadada-do-item">Confeccionada em poliéster, a peça possui design na cor preta, além de contar com o escudo do clube estampado em destaque na região do tórax.</p>
-    
+
                                 <div class="preco-e-icones4 m-preco-e-icones-10 sem-desconto">
                                     <div class="footer-do-item">
                                         <p class="preco-do-item">R$ 99,90</p>
-    
+
                                         <div class="fim-do-item">
                                             <input type="checkbox" class="adicionar-aos-favoritos-item" id="checkbox-coracao-item-10">
                                             <label for="checkbox-coracao-item-10" class="checkbox-coracao-item-label"></label>
-    
+
                                             <input type="checkbox" class="adicionar-ao-carrinho" id="checkbox-carrinho-item-10">
                                             <label for="checkbox-carrinho-item-10" class="checkbox-carrinho-item-label"></label>
                                         </div>
@@ -595,34 +547,40 @@
     </section>
 
     <footer>
-        <div class="d-flex justify-content-center">
-            <div class="elementos-footer">
-                <img src="src/imagens/marcas/logo.png" alt="" class="imagem_logo">
-            </div>
-            <div class="elementos-footer">
-                <h3>CONTATO</h3>
-                <ul>
-                    <li>+55 21 99999-9999</li>
-                    <li>contato@esportesplus.com</li>
-                    <hr>
-                    <li>Rua ali perto, 42 - Botafogo</li>
-                    <li>Rio de Janeiro - RJ</li>
-                    <hr>
-                    <li class="icones-footer d-flex gap-4"><img src="src/icones/instagram.png" alt="" class="imagens-footer"><img src="src/icones/facebook.png" alt="" class="imagens-footer"><img src="src/icones/youtube.png" alt="" class="imagens-footer"></li>
-                </ul>
-            </div>
-            <div class="elementos-footer">
-                <h3><STROng>INFORMAÇÕES</STROng></h3>
-                <ul>
-                    <li>Artigos esportivos</li>
-                    <li>Trabalhe Conosco</li>
-                    <li>Contato</li>
-                    <li>Termos e Condições</li>
-                </ul>
-            </div>
-        </div>
-        <p class="direitos">Esportes+ © Alguns Direitos Reservados</p>
-    </footer>
+        <div class="corpo-do-footer">
+            <div class="conteudo-do-footer">
+                <div class="logo">
+                    <a href="#"><img src="./icon/logo.svg" alt=""></a>
+                </div>
+                <div class="contato">
+                    <h2>CONTATO</h2>
+                    <a href="#">+55 21 99999-9999</a>
+                    <a href="#">contato@esportesplus.com</a>
 
+                    <div class="divisoria-footer"></div>
+
+                    <a href="#" class="endereco">Rua ali perto, 42 - Botafogo Rio de Janeiro - RJ</a>
+
+                    <div class="divisoria-footer"></div>
+
+                    <div class="redes-sociais">
+                        <a href="#"><img src="./icon/instagram.svg" alt=""></a>
+                        <a href="#"><img src="./icon/facebook.svg" alt=""></a>
+                        <a href="#"><img src="./icon/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="informacoes">
+                    <h2>INFORMAÇÕES</h2>
+                    <a href="#">Artigos esportivo</a>
+                    <a href="#">Trabalhe Conosco</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Termos e Condições</a>
+                </div>
+            </div>
+
+            <p class="direitos-reservados">Esportes+ © Alguns Direitos Reservados</p>
+        </div>
+    </footer>
 </body>
+
 </html>
