@@ -116,6 +116,10 @@
 }
 
 @media (min-width: 770px) {
+    .corpo-do-footer{
+        z-index: 10;
+    }
+
     #navegaHeader {
         height: 6rem;
         max-width: 72.5rem;
