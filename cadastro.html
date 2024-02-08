@@ -10,10 +10,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/cadastro.css">
+    <link rel="stylesheet" href="src/css/cadastro/cadastro.css">
+    <link rel="stylesheet" href="src/css/headerNav.css">
+    <link rel="stylesheet" href="src/css/detalhes-do-produto/footer.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav id="navegaHeader">
+            <a href="#" class="logoEsporte navega">
+                <img src="src/icones/logo.svg" alt="Esportes Mais">
+            </a>
+
+            <div class="links desativar">
+                <li class="listaLink">
+                    <ul><a href="">Esportes</a></ul>
+                    <ul><a href="">Masculino</a></ul>
+                    <ul><a href="">Feminino</a></ul>
+                    <ul><a href="">Calçados</a></ul>
+                    <ul><a href="">Equipamentos</a></ul>
+                </li>
+            </div>
+            
+            <div class="iconePesquisa">
+                <div class="entradaPesquisa navega">
+                    <input placeholder="o que você procura?" name="pesquisarPagina" id="pesquisarPagina" type="text">
+                    <label class="labelPesquisarPagina" for="pesquisarPagina"><img src="src/icones/icon search.svg" alt="Lupa"></label>
+                </div>
+
+                <div class="iconesUsuario navega">
+                    <a class="favoritosCarrinho iconereferencia" href="#"><img src="src/icones/icon heart.svg" alt=""></a>
+                    <a class="usuario iconereferencia" href="#"><img src="src/icones/icon profile.png" alt=""></a>
+                    <div class="hamburguerClick iconereferencia">
+                        <img class="teste" src="src/icones/hamburguer.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     
     <div id="conteudo">
 
@@ -41,7 +74,7 @@
                     
                     <div class="areaCpf">
                         <label class="labelEstilo" for="cpf">CPF</label>
-                        <input placeholder="000.000.000-00" class="entradaEstilo"  name="cpf" id="cpf" type="text">
+                        <input placeholder="000.000.000-00" class="entradaEstilo numeroEntrada"  name="cpf" id="cpf" type="number">
                     </div>
                 </div>
 
@@ -56,7 +89,7 @@
 
                     <div class="areaCep">
                         <label class="labelEstilo" for="cep">CEP</label>
-                        <input placeholder="00000-000" class="entradaEstilo" name="cep" id="cep" type="text">
+                        <input placeholder="00000-000" class="entradaEstilo numeroEntrada" name="cep" id="cep" type="number">
                     </div>
 
                     <div class="areaBairro">
@@ -66,7 +99,7 @@
 
                     <div class="areaNumero">
                         <label class="labelEstilo" for="numero">Número</label>
-                        <input class="entradaEstilo" name="numero" id="numero" type="text">
+                        <input class="entradaEstilo numeroEntrada" name="numero" id="numero" type="number">
                     </div>
 
                     <div class="areaCidade">
@@ -78,6 +111,9 @@
                         <label class="labelEstilo" for="estado">Estado</label>
                         <select class="entradaEstilo" name="estado" id="estado">
                             <option value="">Selecione</option>
+                            <option value="RN">RN</option>
+                            <option value="SP">SP</option>
+                            <option value="RJ">RJ</option>
                         </select>
                     </div>
                 </div>
@@ -97,5 +133,40 @@
 
 </body>
 <footer>
+        <div class="corpo-do-footer">
+            <div class="conteudo-do-footer">
+                <div class="logo">
+                    <a href="#"><img src="./src/icones/logo.svg" alt=""></a>
+                </div>
+                <div class="contato">
+                    <h2>CONTATO</h2>
+                    <a href="#">+55 21 99999-9999</a>
+                    <a href="#">contato@esportesplus.com</a>
+
+                    <div class="divisoria-footer"></div>
+
+                    <a href="#" class="endereco">Rua ali perto, 42 - Botafogo Rio de Janeiro - RJ</a>
+
+                    <div class="divisoria-footer"></div>
+
+                    <div class="redes-sociais">
+                        <a href="#"><img src="./src/icones/instagram.svg" alt=""></a>
+                        <a href="#"><img src="./src/icones/facebook.svg" alt=""></a>
+                        <a href="#"><img src="./src/icones/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="informacoes">
+                    <h2>INFORMAÇÕES</h2>
+                    <a href="#">Artigos esportivo</a>
+                    <a href="#">Trabalhe Conosco</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Termos e Condições</a>
+                </div>
+            </div>
+
+            <p class="direitos-reservados">Esportes+ © Alguns Direitos Reservados</p>
+        </div>
+
 </footer>
+<script src="js/headerNav.js"></script>
 </html>

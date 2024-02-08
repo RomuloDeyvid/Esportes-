@@ -1,0 +1,41 @@
+/* --------------dados------------- */
+.areaDados{
+    grid-area: areaDados;
+}
+
+.areaNome{
+    grid-area: areaNome;
+    display: flex;
+    flex-direction: column;
+}
+
+.areaEmail{
+    grid-area: areaEmail;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.areaSenha{
+    grid-area: areaSenha;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.areaCpf{
+    grid-area: areaCpf;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.areaDadosGrid {
+    grid-template-areas:
+        "areaDados areaDados"
+        "areaNome areaNome"
+        "areaEmail areaEmail"
+        "areaSenha areaCpf"
+    ;
+}
+/* --------------dados------------- */

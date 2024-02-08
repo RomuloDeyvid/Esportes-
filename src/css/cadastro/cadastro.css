@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('areaDadosPessoais.css');
+@import url('areaEndereço.css');
+@import url('mediaCadastro.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    min-height: 2.1rem;
+    width: 100%;
+    background: #3DD5F3;
+}
+
+footer {
+    height: 7rem;
+    width: 100%;
+    background: #3DD5F3;
+}
+
+#conteudo {
+    min-height: calc(100% - 9.1rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.formCadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloPagina {
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+/* -----------------Dados pessoais----------------- */
+
+/* ----------------Area conpartilhada------------------ */
+.dadosPessoais, .entrega {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.dadosPessoais {
+    grid-template-columns:  minmax(100px, 1fr)  minmax(100px, 1fr);
+    margin: 1rem 0;
+}
+
+.entrega {
+    grid-template-columns:  minmax(60%, 1fr)  minmax(80px, 1fr);
+}
+
+.areaDados, .areaEntrega {
+    font-size: 0.75rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    border-left: solid 3px #000;
+    padding-left: 0.4rem;
+}
+
+.entradaEstilo, .labelEstilo {
+    font-size: 0.625rem;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: rgba(115, 115, 115, 1);
+}
+
+.entradaEstilo {
+    height: 1.875rem;
+    border: solid 1px rgba(167, 165, 165, 1);
+    border-radius: 5px;
+    padding-left: 0.5rem;
+}
+
+.labelEstilo {
+    margin-bottom: 0.5rem;
+}
+.aceitaTermo .labelEstilo , .aceitaTermo .labelEstilo a {
+    margin: 0;
+    color: #000;
+}
+/* ----------------Area conpartilhada------------------ */
+
+/* ---------------------Area Grid--------------------------- */
+/*                      No Import                       */
+/* ---------------------Area Grid--------------------------- */
+.termos {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.aceitaTermo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.areaEstado select{
+    background: #595959;
+    color: rgba(237, 237, 237, 1);
+    padding-left: 0.5rem;
+
+}
+
+.btnSubmit {
+    font-size: 0.8rem;
+    width: 100px;
+    height: 2rem;
+    background: #000;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.numeroentrada::-webkit-inner-spin-button {
+    all: unset; 
+}
+
+
+/* -----------------Dados pessoais----------------- */
+
+
