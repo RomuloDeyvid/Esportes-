@@ -1,0 +1,131 @@
+.h1{
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h5{
+    align-self: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #E40D0D;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 1em;
+
+}
+.titulo-promocao{
+    display: flex;
+    margin-left: 30em;
+    margin-top: 5em;
+}
+.adicionar-aos-favoritos-items {
+    display: none;
+}
+.checkbox-coracao-item-labels {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-image: url('../imagens/produtos/heart.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+  
+.adicionar-aos-favoritos-items:checked + .checkbox-coracao-item-labels {
+    background-image: url('../imagens/produtos/heart-filled.svg');
+}
+.texto-de-compra{
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 700;
+    align-self: center;
+    color: #fff;
+    background-color: #111;
+    padding: 8px;
+    border-radius: 10px;
+}
+.lista-promocao{
+    margin-top: 5em;
+}
+.adicionar-ao-carrinhos{
+    display: none;
+}
+.checkbox-carrinho-item-labels{
+    display: none;
+}
+
+@media (max-width:765px){
+    .titulo-promocao{
+    
+        margin-left: 5em;
+        margin-top: 3em;
+    }
+    .h1{
+        
+        font-size: 25px;
+    }
+    
+    h5{
+        font-size: 14px;
+        padding: 5px;
+        border-radius: 8px;
+        
+    
+    }
+
+}
+
+@media (max-width: 365px){
+    .titulo-promocao{
+        display: flex;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .h1{
+        font-size: 24px;
+    }
+    
+    h5{
+        font-size: 12px; 
+        padding: 5px;
+        border-radius: 5px;
+    
+    }
+
+    .lista-promocao{
+        margin-top: 1em;
+    }
+    .texto-de-compra{
+        display: none;
+    }
+    .checkbox-coracao-item-labels{
+        width: 13px;
+        height: 13px;
+    }
+    .adicionar-ao-carrinhos{
+        display: block;
+    }
+    .checkbox-carrinho-item-labels{
+        display: block;
+    }
+    .adicionar-ao-carrinhos {
+        display: none;
+    }
+    .checkbox-carrinho-item-labels {
+        width: 13px;
+        height: 13px;
+        display: block;
+        background-image: url('../imagens/produtos/basket.svg');
+        background-size: cover;
+        cursor: pointer;
+    }
+      
+    .adicionar-ao-carrinhos:checked + .checkbox-carrinho-item-labels {
+        background-image: url('../imagens/produtos/basket\ filled.svg');
+    }
+    .descricao-do-item{
+        gap: 0;
+    }
+}

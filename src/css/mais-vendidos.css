@@ -1,0 +1,55 @@
+.card-container {
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 2em;
+    background: white;
+    width: 70%; 
+    margin: auto;
+  }
+.card-mais-vendidos-imagem {
+    width: 260px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-titulo-produto{
+    font-family: var(--opens);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 33px;
+}
+.card-mais-detalhes {
+    font-family: var(--opens);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #737373;
+    text-decoration: underline;
+    margin-top: 5px;
+
+}
+.card-mais-vendidos-preco {
+    margin-top: 0px;
+}
+.card-preco{
+    color: #717171;
+    font-family: var(--opens);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+}
+.titulo-do-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px;
+}
+.cards-lista {
+    display: grid;
+    gap: 0px;
+    font-size: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    grid-template-columns: repeat(20, 1fr);
+}

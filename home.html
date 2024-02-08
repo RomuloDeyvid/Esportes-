@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/navbar.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/banner-carrosel.css">
+    <link rel="stylesheet" href="src/css/promocao.css">
+    <link rel="stylesheet" href="src/css/detalhes-do-produto.css">
+    <link rel="stylesheet" href="src/css/carrosel-de-cards.css">
+    <link rel="stylesheet" href="src/css/mais-vendidos.css">
+    <link rel="stylesheet" href="src/css/parceiros.css">
+    <link rel="stylesheet" href="src/css/sobre-nos.css">
+    <script src="js/carrosel.js"></script>
+    <script src="js/detalhes-do-produto.js" defer></script>
+    <script src="js/contagem.js"></script>
+    
+</head>
+<body>
+    <nav class="nav-bar navbar-expand-lg p-xl-4 justify-content-center align-items-center">
+        <div class="container-fluid d-flex flex-column align-items-center">
+            <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+                <img src="src/imagens/marcas/logo.png" alt="" class="imagem_logo">
+                <div class="mb-lg-0 lista-nav"> 
+                        <a class="nav-link mx-2" href="#">Masculino</a>
+                        <a class="nav-link mx-2" href="#">Feminino</a>
+                        <a class="nav-link mx-2" href="#">Calçados</a>
+                        <a class="nav-link mx-2" href="#">Equipamentos</a>
+                </div>
+                <div class="formulario">
+                    <form class="barra-pesquisa" role="search">
+                    <input class="formulario barra-pesquisa-img" type="search" placeholder="O que você procura?" aria-label="Search">
+                    </form>
+                </div>
+                
+                <div class="lista-icones">
+                    <a href=""><img src="src/icones/icon heart.png" alt="" class="icones"></a>
+                    <a href=""><img src="src/icones/icon profile.png" alt="" class="icones"></a>
+                </div>
+                <div>
+                    <button class="btn botao-side-bar justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="src/icones/hamburguer.png" alt="" class="icone-hamburguer"></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header ">
+                        <div class="d-flex flex-column">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <a class="itens-side-bar mx-2" href="#">Esportes</a>
+                        <hr>
+                        <a class="itens-side-bar mx-2" href="#">Masculino</a>
+                        <hr>
+                        <a class="itens-side-bar mx-2" href="#">Feminino</a>
+                        <hr>
+                        <a class="itens-side-bar mx-2" href="#">Calçados</a>
+                        <hr>
+                        <a class="itens-side-bar mx-2" href="#">Equipamentos</a>
+                        <hr>
+                        </div>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="carousel">
+            <img src="src/imagens/banners principais/1.png" alt="" class="imagens-banner carousel__item">
+            <img src="src/imagens/banners principais/2.png" alt="" class="imagens-banner carousel__item">
+            <img src="src/imagens/banners principais/3.png" alt="" class="imagens-banner carousel__item">
+    </div>
+
+    <section class="promocao">
+            <div class="titulo-promocao">
+                <p class="h1">PROMO</p>
+                <h5 id="contador">00:00:00</h2>
+            </div>
+
+            <div class="corpo-do-carrossel lista-promocao">
+                <div class="carrossel-de-imagens">
+                    <div class="carrossel">
+                        <button id="slide-anterior" class="botao-de-carrossel"><p><</p></button>
+                        <ul class="lista-de-itens">
+                            <li>
+                                <img class="imagem-do-item" src="src/imagens/produtos/13.png" alt="">
+        
+                                <div class="descricao-do-item">  
+                                    <div class="titulo-do-item">
+                                        <p class="h2">Mochila Nike</p>
+        
+                                        <div class="avaliacao-do-item">
+                                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                                            <p>4,2</p>
+                                        </div>
+                                    </div>
+        
+                                    <p class="descricao-detalhadada-do-item">Confeccionada em tecido poliéster, sendo 65% de fibras de poliéster reciclado, a mochila Nike Elemental é um modelo prático e versátil para usar no cotidiano.
+                                    </p>
+                                    
+                                    <div class="preco-e-icones2">
+                                        <p class="desconto-do-item">R$ 150,00</p>
+            
+                                        <div class="footer-do-item">
+                                            <p class="preco-do-item">R$ 110,00</p>
+                                            
+                                            <div class="fim-do-item">
+                                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item">
+                                                <label for="checkbox-coracao-item" class="checkbox-coracao-item-labels"></label>
+        
+                                                <p class="texto-de-compra">COMPRAR</p>
+                                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item">
+                                                <label for="checkbox-carrinho-item" class="checkbox-carrinho-item-labels"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="imagem-do-item" src="src/imagens/produtos/14.png" alt="">
+        
+                                <div class="descricao-do-item">  
+                                    <div class="titulo-do-item">
+                                        <p class="h2">Camisa Manchester</p>
+        
+                                        <div class="avaliacao-do-item">
+                                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                                            <p>4,9</p>
+                                        </div>
+                                    </div>
+        
+                                    <p class="descricao-detalhadada-do-item">A Camisa do Real Madrid II 23 adidas é a escolha perfeita para os verdadeiros torcedores “Merengues” que buscam qualidade e estilo incomparáveis.
+                                    </p>
+                                    
+                                    <div class="preco-e-icones2">
+                                        <p class="desconto-do-item">R$ 312,00</p>
+            
+                                        <div class="footer-do-item">
+                                            <p class="preco-do-item">R$ 280,80</p>
+                                            
+                                            <div class="fim-do-item">
+                                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item-2">
+                                                <label for="checkbox-coracao-item-2" class="checkbox-coracao-item-labels"></label>
+        
+                                                <p class="texto-de-compra">COMPRAR</p>
+                                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item-2">
+                                                <label for="checkbox-carrinho-item-2" class="checkbox-carrinho-item-labels"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="imagem-do-item" src="src/imagens/produtos/11.png" alt="">
+        
+                                <div class="descricao-do-item">  
+                                    <div class="titulo-do-item">
+                                        <p class="h2">Converse Chuck 70</p>
+        
+                                        <div class="avaliacao-do-item">
+                                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                                            <p>4,8</p>
+                                        </div>
+                                    </div>
+        
+                                    <p class="descricao-detalhadada-do-item">Em busca do futuro, o Chuck 70 Plus apresenta características clássicas do Chuck 70 e adiciona detalhes que conferem um visual único e disruptivo.
+                                    </p>
+                                    
+                                    <div class="preco-e-icones2">
+                                        <p class="desconto-do-item">R$ 350,00</p>
+            
+                                        <div class="footer-do-item">
+                                            <p class="preco-do-item">R$ 280,00</p>
+                                            
+                                            <div class="fim-do-item">
+                                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item-3">
+                                                <label for="checkbox-coracao-item-3" class="checkbox-coracao-item-labels"></label>
+        
+                                                <p class="texto-de-compra">COMPRAR</p>
+                                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item-3">
+                                                <label for="checkbox-carrinho-item-3" class="checkbox-carrinho-item-labels"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="imagem-do-item" src="src/imagens/produtos/12.png" alt="">
+        
+                                <div class="descricao-do-item">  
+                                    <div class="titulo-do-item">
+                                        <p class="h2">Calça Legging Oxer</p>
+        
+                                        <div class="avaliacao-do-item">
+                                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                                            <p>4,4</p>
+                                        </div>
+                                    </div>
+        
+                                    <p class="descricao-detalhadada-do-item">A Calça Legging Feminina Oxer Sem Costura foi projetada para oferecer tudo o que você precisa em sua jornada de bem-estar.
+                                    </p>
+                                    
+                                    <div class="preco-e-icones2">
+                                        <p class="desconto-do-item">R$ 99,90</p>
+            
+                                        <div class="footer-do-item">
+                                            <p class="preco-do-item">R$ 85,00</p>
+                                            
+                                            <div class="fim-do-item">
+                                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item-4">
+                                                <label for="checkbox-coracao-item-4" class="checkbox-coracao-item-labels"></label>
+        
+                                                <p class="texto-de-compra">COMPRAR</p>
+                                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item-4">
+                                                <label for="checkbox-carrinho-item-4" class="checkbox-carrinho-item-labels"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="imagem-do-item" src="src/imagens/produtos/06.png" alt="">
+        
+                                <div class="descricao-do-item">  
+                                    <div class="titulo-do-item">
+                                        <p class="h2">Boné Aba Curva N...</p>
+        
+                                        <div class="avaliacao-do-item">
+                                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                                            <p>4,2</p>
+                                        </div>
+                                    </div>
+        
+                                    <p class="descricao-detalhadada-do-item">Clássico e confortável, o boné Nike Sportswear Heritage Heritage86 apresenta um design de seis painéis feito com tecido de sarja e um fechamento ajustável.
+                                    </p>
+                                    
+                                    <div class="preco-e-icones2">
+                                        <p class="desconto-do-item">R$ 119,90</p>
+            
+                                        <div class="footer-do-item">
+                                            <p class="preco-do-item">R$ 100,00</p>
+                                            
+                                            <div class="fim-do-item">
+                                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item-5">
+                                                <label for="checkbox-coracao-item-5" class="checkbox-coracao-item-labels"></label>
+        
+                                                <p class="texto-de-compra">COMPRAR</p>
+                                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item-5">
+                                                <label for="checkbox-carrinho-item-5" class="checkbox-carrinho-item-labels"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="imagem-do-item" src="src/imagens/produtos/02.png" alt="">
+        
+                                <div class="descricao-do-item">  
+                                    <div class="titulo-do-item">
+                                        <p class="h2">Camisa Athletico...</p>
+        
+                                        <div class="avaliacao-do-item">
+                                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                                            <p>3,7</p>
+                                        </div>
+                                    </div>
+        
+                                    <p class="descricao-detalhadada-do-item">Perfeita para os torcedores da Arena da Baixada, essa camisa Athletico Paranaense masculina apresenta escudo do time do lado esquerdo, gola careca e tiras cruzadas. 
+                                    </p>
+                                    
+                                    <div class="preco-e-icones2">
+                                        <p class="desconto-do-item">R$ 359,90</p>
+            
+                                        <div class="footer-do-item">
+                                            <p class="preco-do-item">R$ 169,90</p>
+                                            
+                                            <div class="fim-do-item">
+                                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item-6">
+                                                <label for="checkbox-coracao-item-6" class="checkbox-coracao-item-labels"></label>
+        
+                                                <p class="texto-de-compra">COMPRAR</p>
+                                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item-6">
+                                                <label for="checkbox-carrinho-item-6" class="checkbox-carrinho-item-labels"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="imagem-do-item" src="src/imagens/produtos/05.png" alt="">
+        
+                                <div class="descricao-do-item">  
+                                    <div class="titulo-do-item">
+                                        <p class="h2">Óculos de Sol Ha...</p>
+        
+                                        <div class="avaliacao-do-item">
+                                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                                            <p>3,8</p>
+                                        </div>
+                                    </div>
+        
+                                    <p class="descricao-detalhadada-do-item">Contém: 1 óculos de sol e 1 estojo de tecido Composição armação: Policarbonato Cor predominante: Preta Comprimento da haste: 15 cm Peso aproximado: 20 g.
+                                    </p>
+                                    
+                                    <div class="preco-e-icones2">
+                                        <p class="desconto-do-item">R$ 159,01</p>
+            
+                                        <div class="footer-do-item">
+                                            <p class="preco-do-item">R$ 159,00</p>
+                                            
+                                            <div class="fim-do-item">
+                                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item-7">
+                                                <label for="checkbox-coracao-item-7" class="checkbox-coracao-item-labels"></label>
+        
+                                                <p class="texto-de-compra">COMPRAR</p>
+                                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item-7">
+                                                <label for="checkbox-carrinho-item-7" class="checkbox-carrinho-item-labels"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                        <button id="slide-sucessor" class="botao-de-carrossel">></button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <div class="container">
+            <div class="sub-container-titulo">
+                <p class="subtitulo-do-container">você pratica, a gente estiliza.</p>
+                <p class="titulo-do-container">ESCOLHA POR ESPORTE<strong class="ponto-azul">.</strong></p>
+            </div>
+            <div class="card-carousel">
+              <div class="card" id="1">
+                <div class="image-container"></div>
+              </div>
+              <div class="card" id="2">
+                <div class="image-container"></div>
+              </div>
+              <div class="card" id="3">
+                <div class="image-container"></div>
+              </div>  
+              <div class="card" id="4">
+                <div class="image-container"></div>
+              </div>
+              <div class="card" id="5">
+                <div class="image-container"></div>
+              </div>
+            </div>
+            <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+    </div>
+        
+    <section class="card-container">
+        <div class="sub-container-titulo">
+            <p class="subtitulo-do-container">os queridinhos voltaram</p>
+            <p class="titulo-do-container">MAIS VENDIDOS<strong class="ponto-azul">.</strong></p>
+        </div>
+        <ul class="cards-lista">
+            <li>
+                <img class="card-mais-vendidos-imagem" src="src/imagens/produtos/15.png" alt="">
+
+                <div class="descricao-do-item">  
+                    <div class="titulo-do-item">
+                        <p class="card-titulo-produto">Calça Treino Adidas</p>
+
+                        <div class="avaliacao-do-item">
+                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                            <p>4,9</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-mais-vendidos-preco">
+                        <p class="card-preco">R$ 123,90</p>
+
+                        <div class="footer-do-item">
+                            <p class="card-mais-detalhes">Mais detalhes</p>
+                            
+                            <div class="fim-do-item">
+                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item">
+                                <label for="checkbox-coracao-item" class="checkbox-coracao-item-labels"></label>
+
+                                <p class="texto-de-compra">COMPRAR</p>
+                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item">
+                                <label for="checkbox-carrinho-item" class="checkbox-carrinho-item-labels"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img class="card-mais-vendidos-imagem" src="src/imagens/produtos/08.png" alt="">
+
+                <div class="descricao-do-item">  
+                    <div class="titulo-do-item">
+                        <p class="card-titulo-produto">Jaqueta Corta Ve...</p>
+
+                        <div class="avaliacao-do-item">
+                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                            <p>4,9</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-mais-vendidos-preco">
+                        <p class="card-preco">R$ 99,90</p>
+
+                        <div class="footer-do-item">
+                            <p class="card-mais-detalhes">Mais detalhes</p>
+                            
+                            <div class="fim-do-item">
+                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item">
+                                <label for="checkbox-coracao-item" class="checkbox-coracao-item-labels"></label>
+
+                                <p class="texto-de-compra">COMPRAR</p>
+                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item">
+                                <label for="checkbox-carrinho-item" class="checkbox-carrinho-item-labels"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img class="card-mais-vendidos-imagem" src="src/imagens/produtos/09.png" alt="">
+
+                <div class="descricao-do-item">  
+                    <div class="titulo-do-item">
+                        <p class="card-titulo-produto">Tênis Feminino Ad...</p>
+
+                        <div class="avaliacao-do-item">
+                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                            <p>4,9</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-mais-vendidos-preco">
+                        <p class="card-preco">R$ 168,20</p>
+
+                        <div class="footer-do-item">
+                            <p class="card-mais-detalhes">Mais detalhes</p>
+                            
+                            <div class="fim-do-item">
+                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item">
+                                <label for="checkbox-coracao-item" class="checkbox-coracao-item-labels"></label>
+
+                                <p class="texto-de-compra">COMPRAR</p>
+                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item">
+                                <label for="checkbox-carrinho-item" class="checkbox-carrinho-item-labels"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img class="card-mais-vendidos-imagem" src="src/imagens/produtos/07.png" alt="">
+
+                <div class="descricao-do-item">  
+                    <div class="titulo-do-item">
+                        <p class="card-titulo-produto">Camisa Feminina A...</p>
+
+                        <div class="avaliacao-do-item">
+                            <img src="src/imagens/produtos/Star 1.svg" alt="">
+                            <p>4,9</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-mais-vendidos-preco">
+                        <p class="card-preco">R$ 89,90</p>
+
+                        <div class="footer-do-item">
+                            <p class="card-mais-detalhes">Mais detalhes</p>
+                            
+                            <div class="fim-do-item">
+                                <input type="checkbox" class="adicionar-aos-favoritos-items" id="checkbox-coracao-item">
+                                <label for="checkbox-coracao-item" class="checkbox-coracao-item-labels"></label>
+
+                                <p class="texto-de-compra">COMPRAR</p>
+                                <input type="checkbox" class="adicionar-ao-carrinhos" id="checkbox-carrinho-item">
+                                <label for="checkbox-carrinho-item" class="checkbox-carrinho-item-labels"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="parceiros">
+        <div class="sub-container-titulo">
+            <p class="subtitulo-do-container">as melhores marcas só aqui.</p>
+            <p class="titulo-do-container">NOSSOS PARCEIROS<strong class="ponto-azul">.</strong></p>
+        </div>
+        <div class="row container-imagens-parceiros">
+            <div class="col-md-3 borda-imagem-1">
+              <img src="src/imagens/marcas/converse-logo-1.svg" class="img-fluid imagem-parceiros">
+            </div>
+            <div class="col-md-3 borda-imagem-2">
+              <img src="src/imagens/marcas/adidas.svg" class="img-fluid imagem-parceiros">
+            </div>
+            <div class="col-md-3 borda-imagem-3">
+              <img src="src/imagens/marcas/under-armour-logo.svg" class="img-fluid imagem-parceiros">
+            </div>
+            <div class="col-md-3 borda-imagem-4">
+              <img src="src/imagens/marcas/fila-9.svg" class="img-fluid imagem-parceiros">
+            </div>
+          </div>
+          <div class="row container-imagens-parceiros">
+            <div class="col-md-3 borda-imagem-5">
+              <img src="src/imagens/marcas/nfl.svg" class="img-fluid imagem-parceiros">
+            </div>
+            <div class="col-md-3 borda-imagem-6">
+              <img src="src/imagens/marcas/asics-6.svg" class="img-fluid imagem-parceiros">
+            </div>
+            <div class="col-md-3 borda-imagem-7">
+              <img src="src/imagens/marcas/puma-logo.svg" class="img-fluid imagem-parceiros">
+            </div>
+            <div class="col-md-3 borda-imagem-8">
+              <img src="src/imagens/marcas/mizuno.svg" class="img-fluid imagem-parceiros">
+            </div>
+          </div>
+    </section>
+
+    <section class="sobre-nos">
+        <div class="sub-container-titulo">
+            <p class="subtitulo-do-container">informações</p>
+            <p class="titulo-do-container ponto-azul">SOBRE NÓS.</p>
+        </div>
+
+        <div class="sobre-nos-1">
+            <div class="conteudo">
+            <p class="titulo-sobre-nos">VISÃO<strong class="ponto-azul">.</strong></p>
+            <p class="texto-sobre-nos">"Ser reconhecida como a principal destinação online para entusiastas de esportes, proporcionando uma experiência de compra excepcional, oferecendo produtos de alta qualidade e inspirando um estilo de vida ativo e saudável."</p>
+            </div>
+        </div>
+
+        <div>
+            <p class="titulo-sobre-nos">MISSÃO<strong class="ponto-azul">.</strong></p>
+            <p class="texto-sobre-nos">"Na nossa missão de promover uma vida saudável e ativa, buscamos fornecer aos nossos clientes acesso fácil aos melhores produtos esportivos do mercado. Comprometemo-nos a oferecer uma seleção diversificada, qualidade superior e um serviço excepcional, criando uma comunidade onde apaixonados por esportes possam encontrar tudo o que precisam para alcançar seus objetivos e desfrutar plenamente de sua jornada esportiva."</p>
+        </div>
+
+        <div>
+            <p class="titulo-sobre-nos">VALORES<strong class="ponto-azul">.</strong></p>
+            <ul>
+                <li>Excelência do Cliente</li>
+                <p>Colocamos nossos clientes em primeiro lugar, buscando constantemente superar suas expectativas, oferecendo um atendimento excepcional e produtos de qualidade superior.</p>
+                <li>Integridade e Transparência</li>
+                <p>Operamos com honestidade e transparência em todas as interações. Construímos relacionamentos baseados na confiança, tanto com nossos clientes quanto com nossos parceiros.</p>
+                <li>Paixão pelo Esporte</li>
+                <p>Compartilhamos a paixão pelos esportes e acreditamos nos benefícios transformadores que um estilo de vida ativo pode proporcionar. Buscamos inspirar e apoiar nossos clientes em suas jornadas esportivas.</p>
+            </ul>
+        </div>
+
+
+    </section>
+
+    <div class="content-container">
+    </div>
+    <footer>
+        <div class="d-flex justify-content-center">
+            <div class="elementos-footer">
+                <img src="src/imagens/marcas/logo.png" alt="" class="imagem_logo">
+            </div>
+            <div class="elementos-footer">
+                <h3>CONTATO</h3>
+                <ul>
+                    <li>+55 21 99999-9999</li>
+                    <li>contato@esportesplus.com</li>
+                    <hr>
+                    <li>Rua ali perto, 42 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                    <hr>
+                    <li class="icones-footer d-flex gap-4"><img src="src/icones/instagram.png" alt="" class="imagens-footer"><img src="src/icones/facebook.png" alt="" class="imagens-footer"><img src="src/icones/youtube.png" alt="" class="imagens-footer"></li>
+                </ul>
+            </div>
+            <div class="elementos-footer">
+                <h3><STROng>INFORMAÇÕES</STROng></h3>
+                <ul>
+                    <li>Artigos esportivos</li>
+                    <li>Trabalhe Conosco</li>
+                    <li>Contato</li>
+                    <li>Termos e Condições</li>
+                </ul>
+            </div>
+        </div>
+        <p class="direitos">Esportes+ © Alguns Direitos Reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/carrosel.js"></script>
+    <script src="js/carrosel-de-cards.js"></script>
+</body>
+</html>

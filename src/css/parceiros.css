@@ -1,0 +1,41 @@
+.parceiros {
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 2em;
+    background: white;
+    width: 70%; 
+    margin: auto;
+}
+.imagem-parceiros{
+    width: 155px;
+    height: 100px;
+    margin: 1em;
+}
+.container-imagens-parceiros{
+    text-align: center;
+    
+}
+.borda-imagem-1{
+    border-right: 2px solid #EDEDED; 
+    border-bottom: 2px solid #EDEDED;
+}
+.borda-imagem-2{
+    border-right: 2px solid #EDEDED; 
+    border-bottom: 2px solid #EDEDED;
+}
+.borda-imagem-3{
+    border-right: 2px solid #EDEDED; 
+    border-bottom: 2px solid #EDEDED;
+}
+.borda-imagem-4{
+    border-bottom: 2px solid #EDEDED;
+}
+.borda-imagem-5{
+    border-right: 2px solid #EDEDED; 
+}
+.borda-imagem-6{
+    border-right: 2px solid #EDEDED; 
+}
+.borda-imagem-7{
+    border-right: 2px solid #EDEDED; 
+}
