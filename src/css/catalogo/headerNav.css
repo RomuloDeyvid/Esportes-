@@ -1,0 +1,252 @@
+:root {
+    /* cores da marca */
+    --A05: #014256;
+    --A04: #137492;
+    --A03: #199AC0;
+    --A02: #08ADDE;
+    --A01: #3DD5F3;
+
+    /* cores básicas */
+    --C12: #000000;
+    --C11: #111111;
+    --C10: #2E2E2E;
+    --C09: #404040;
+    --C08: #595959;
+    --C07: #717171;
+    --C06: #9C9C9C;
+    --C05: #B2B2B2;
+    --C04: #CCCCCC;
+    --C03: #DEDEDE;
+    --C02: #EDEDED;
+    --C01: #F7F7F7;
+    --CW: #FFFFFF;
+
+    /* tipografia */
+    --opens: 'Open Sans', Arial;
+    --montserrat: 'Montserrat', sans-serif;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+
+}
+
+header {
+    width: 100%;
+    background: #3DD5F3;
+}
+
+#navegaHeader {
+    height: 2.6rem;
+    background: #3DD5F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.fixaBarra {
+    position: fixed !important;
+    z-index: 10;
+}
+
+.logoEsporte {
+    width: 5rem;
+}
+
+.logoEsporte img {
+    height: 100%;
+    width: 100%;
+}
+
+.iconePesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.navega {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.labelPesquisarPagina {
+    height: 0.8rem;
+    width: 0.7rem;
+    position: absolute;
+    left: 80px;
+}
+
+.labelPesquisarPagina img {
+    height: 100%;
+    width: 100%;
+}
+
+.entradaPesquisa {
+    display: flex;
+    position: relative;
+    height: 1rem;
+    width: 6.25rem;
+}
+
+#pesquisarPagina {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 0.406rem;
+    border: none;
+}
+
+.iconesUsuario {
+    gap: 0.1rem;
+    height: 2rem;
+}
+
+.hamburguerClick {
+    z-index: 1;
+}
+
+.iconereferencia {
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+.iconereferencia img {
+    height: 100%;
+    width: 100%;
+}
+
+.links {
+    position: absolute;
+    min-height: 100%;
+    right: 0;
+    top: 2.6rem;
+    width: 11.813rem;
+    background: #3DD5F3;
+    z-index: 2;
+}
+
+.listaLink {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.7rem;
+    padding: 1rem;
+}
+
+.desativar {
+    display: none;
+}
+
+.listaLink ul {
+    border-bottom: solid 1px #000;
+    padding: 1rem 0;
+}
+
+.listaLink ul a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Open Sans";
+}
+
+@media (min-width: 770px) {
+    #navegaHeader {
+        height: 6rem;
+        max-width: 72.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 0 1rem;
+    }
+
+    .logoEsporte {
+        min-width: 10rem;
+        height: 3rem;
+    }
+
+    .iconePesquisa {
+        display: flex;
+        align-items: center;
+    }
+
+    .navega {
+        display: flex;
+        align-items: center;
+        margin: 0 5px;
+    }
+
+    .labelPesquisarPagina {
+        height: 1rem;
+        width: 1rem;
+        left: 170px;
+    }
+
+    .entradaPesquisa {
+        height: 2rem;
+        max-width: 18.75rem;
+        width: 12rem;
+    }
+
+    #pesquisarPagina {
+        border-radius: 10px;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .iconesUsuario {
+        gap: 0.5rem;
+        height: 2rem;
+    }
+
+    .iconereferencia {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .links {
+        top: 6rem;
+    }
+
+    .listaLink {
+        display: flex;
+        gap: 1rem;
+        font-size: 1rem;
+
+    }
+
+}
+
+
+@media (min-width: 960px) {
+
+    .hamburguerClick {
+        display: none;
+    }
+
+    .links {
+        display: flex;
+        position: initial;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .listaLink {
+        flex-direction: row;
+    }
+
+    .desativar {
+        display: flex;
+    }
+
+    .listaLink ul {
+        border-bottom: none;
+        padding: 0;
+    }
+
+}
+
+/* --------------Navegação header ------------------------ */

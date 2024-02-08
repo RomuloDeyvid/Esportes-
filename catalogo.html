@@ -11,19 +11,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/catalogo/catalogo.css">
-    <link rel="stylesheet" href="./css/catalogo/footer.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/catalogo/catalogo.css">
+    <link rel="stylesheet" href="./src/css/catalogo/footer.css">
+    <link rel="stylesheet" href="./src/css/catalogo/headerNav.css">
 
     <!-- javascript -->
     <script src="./js/catalogo.js" defer></script>
+    <script src="./js/headerNav.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <nav id="navegaHeader">
+            <a href="#" class="logoEsporte navega">
+                <img src="src/icones/logo.svg" alt="Esportes Mais">
+            </a>
+
+            <div class="links desativar">
+                <li class="listaLink">
+                    <ul><a href="">Esportes</a></ul>
+                    <ul><a href="">Masculino</a></ul>
+                    <ul><a href="">Feminino</a></ul>
+                    <ul><a href="">Calçados</a></ul>
+                    <ul><a href="">Equipamentos</a></ul>
+                </li>
+            </div>
+
+            <div class="iconePesquisa">
+                <div class="entradaPesquisa navega">
+                    <input placeholder="o que você procura?" name="pesquisarPagina" id="pesquisarPagina" type="text">
+                    <label class="labelPesquisarPagina" for="pesquisarPagina"><img src="src/icones/icon search.svg" alt="Lupa"></label>
+                </div>
+
+                <div class="iconesUsuario navega">
+                    <a class="favoritosCarrinho iconereferencia" href="#"><img src="src/icones/icon heart.svg" alt=""></a>
+                    <a class="usuario iconereferencia" href="#"><img src="src/icones/icon profile.png" alt=""></a>
+                    <div class="hamburguerClick iconereferencia">
+                        <img class="teste" src="src/icones/hamburguer.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <section class="catalogo">
         <section class="inter-navegacao">
             <a href="#">home</a>
-            <img src="./icon/Vector 3.svg" alt="">
+            <img src="./src/icones/Vector 3.svg" alt="">
             <a href="#">todos os produtos</a>
         </section>
 
@@ -99,24 +134,28 @@
         <div class="produtos-do-catalogo">
             <ul class="linha-de-produtos">
                 <li>
-                    <a href="#">
-                        <img class="imagem-do-item" src="./img/Rectangle 9.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 9.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Camisa Athletico...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Camisa Athletico...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>3,7</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src="./src/icones/Star 1.svg" alt="">
+                                        <p>3,7</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Perfeita para os torcedores da Arena da Baixada, essa camisa Athletico Paranaense masculina apresenta escudo do time do lado esquerdo, gola careca e tiras cruzadas.</dd>
-                    </dl>
+                        </a>
+
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Perfeita para os torcedores da Arena da Baixada, essa camisa Athletico Paranaense masculina apresenta escudo do time do lado esquerdo, gola careca e tiras cruzadas.</dd>
+                        </dl>
+                    </div>
+
                     <div class="preco-e-icones2 m-preco-e-icones">
                         <p class="desconto-do-item">R$ 359,90</p>
 
@@ -134,25 +173,28 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">
-                        <img class="imagem-do-item" src="./img/Rectangle 11.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 11.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Tênis Converse All..</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Tênis Converse All..</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,7</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src="./src/icones/Star 1.svg" alt="">
+                                        <p>4,7</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                    </a>
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Desenvolvido pela Converse, o tênis All Star da linha Chuck Taylor, é a melhor opção para garantir visual moderno e estiloso nos momentos casuais.</dd>
-                    </dl>
+                            </div>
+                        </a>
+
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Desenvolvido pela Converse, o tênis All Star da linha Chuck Taylor, é a melhor opção para garantir visual moderno e estiloso nos momentos casuais.</dd>
+                        </dl>
+                    </div>
                     <div class="preco-e-icones2 m-preco-e-icones-2">
 
                         <div class="footer-do-item">
@@ -169,25 +211,28 @@
                     </div>
                 </li>
                 <li class="mobile-out">
-                    <a href="./detalhes-do-produto.html">
-                        <img class="imagem-do-item" src="./img/Rectangle 12.jpg" alt="">
+                    <div>
+                        <a href="./detalhes-do-produto.html">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 12.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Camiseta New Era...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Camiseta New Era...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,2</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src="./src/icones/Star 1.svg" alt="">
+                                        <p>4,2</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
 
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Feita com algodão, a peça possui design em preto e traz o escudo do time estampado em destaque.</dd>
-                    </dl>
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Feita com algodão, a peça possui design em preto e traz o escudo do time estampado em destaque.</dd>
+                        </dl>
+                    </div>
+
 
                     <div class="preco-e-icones2 m-preco-e-icones-3">
 
@@ -207,25 +252,28 @@
             </ul>
             <ul class="linha-de-produtos">
                 <li>
-                    <a href="#">
-                        <img class="imagem-do-item" src="./img/Rectangle 1.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 1.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Converse Chuck 70</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Converse Chuck 70</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,8</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src="./src/icones/Star 1.svg" alt="">
+                                        <p>4,8</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                    </a>
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Em busca do futuro, o Chuck 70 Plus apresenta características clássicas do Chuck 70 e adiciona detalhes que conferem um visual único e disruptivo.</dd>
-                    </dl>
+                            </div>
+                        </a>
+
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Em busca do futuro, o Chuck 70 Plus apresenta características clássicas do Chuck 70 e adiciona detalhes que conferem um visual único e disruptivo.</dd>
+                        </dl>
+                    </div>
 
                     <div class="preco-e-icones2 m-preco-e-icones-4">
                         <p class="desconto-do-item">R$ 350,00</p>
@@ -244,25 +292,27 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">
-                        <img class="imagem-do-item" src="./img/Rectangle 8.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 8.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Óculos de Sol Ha...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Óculos de Sol Ha...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>3,8</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src=".src/icones/Star 1.svg" alt="">
+                                        <p>3,8</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                    </a>
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Contém: 1 óculos de sol e 1 estojo de tecido Composição armação: Policarbonato Cor predominante: Preta Comprimento da haste: 15 cm Peso aproximado: 20 g.</dd>
-                    </dl>
+                            </div>
+                        </a>
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Contém: 1 óculos de sol e 1 estojo de tecido Composição armação: Policarbonato Cor predominante: Preta Comprimento da haste: 15 cm Peso aproximado: 20 g.</dd>
+                        </dl>
+                    </div>
                     <div class="preco-e-icones2 m-preco-e-icones-5">
 
                         <div class="footer-do-item">
@@ -279,25 +329,27 @@
                     </div>
                 </li>
                 <li class="mobile-out">
-                    <a href="">
-                        <img class="imagem-do-item" src="./img/Rectangle 10.jpg" alt="">
+                    <div>
+                        <a href="">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 10.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Camisa Flamengo...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Camisa Flamengo...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,1</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src=".src/icones/Star 1.svg" alt="">
+                                        <p>4,1</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
 
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Confeccionada em poliéster, a peça possui design na cor preta, além de contar com o escudo do clube estampado em destaque na região do tórax.</dd>
-                    </dl>
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Confeccionada em poliéster, a peça possui design na cor preta, além de contar com o escudo do clube estampado em destaque na região do tórax.</dd>
+                        </dl>
+                    </div>
 
                     <div class="preco-e-icones2 m-preco-e-icones-6">
 
@@ -317,25 +369,27 @@
             </ul>
             <ul class="linha-de-produtos">
                 <li>
-                    <a href="#">
-                        <img class="imagem-do-item" src="./img/Rectangle 6.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos//Rectangle 6.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Camiseta Adidas 3...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Camiseta Adidas 3...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>5,0</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src=".src/icones/Star 1.svg" alt="">
+                                        <p>5,0</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
 
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Hora de dar um up no visual com o estilo descolado da Camiseta Adidas 3 Listras Feminina! O design autêntico dá o charme do look, enquanto o material leve e macio oferece conforto sem igual.</dd>
-                    </dl>
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Hora de dar um up no visual com o estilo descolado da Camiseta Adidas 3 Listras Feminina! O design autêntico dá o charme do look, enquanto o material leve e macio oferece conforto sem igual.</dd>
+                        </dl>
+                    </div>
 
                     <div class="preco-e-icones2 m-preco-e-icones-7">
                         <div class="footer-do-item">
@@ -353,25 +407,28 @@
 
                 </li>
                 <li>
-                    <a href="#">
-                        <img class="imagem-do-item" src="./img/Rectangle 4.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 4.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Camisa Manchester</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Camisa Manchester</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,9</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src=".src/icones/Star 1.svg" alt="">
+                                        <p>4,9</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                    </a>
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">A Camisa do Real Madrid II 23 adidas é a escolha perfeita para os verdadeiros torcedores “Merengues” que buscam qualidade e estilo incomparáveis.</dd>
-                    </dl>
+                            </div>
+                        </a>
+
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">A Camisa do Real Madrid II 23 adidas é a escolha perfeita para os verdadeiros torcedores “Merengues” que buscam qualidade e estilo incomparáveis.</dd>
+                        </dl>
+                    </div>
 
                     <div class="preco-e-icones2 m-preco-e-icones-8">
                         <p class="desconto-do-item">R$ 312,00</p>
@@ -390,26 +447,28 @@
                     </div>
                 </li>
                 <li class="mobile-out">
-                    <a href="#">
-                        <img class="imagem-do-item" src="./img/Rectangle 7.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 7.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Mochila Adidas Li...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Mochila Adidas Li...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,5</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src=".src/icones/Star 1.svg" alt="">
+                                        <p>4,5</p>
+                                    </div>
                                 </div>
+
                             </div>
+                        </a>
 
-                        </div>
-                    </a>
-
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Leve todos os seus itens com segurança e conforto! Perfeita para acompanhar sua rotina, a Mochila Adidas Linear garante qualidade e estilo numa só peça.</dd>
-                    </dl>
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Leve todos os seus itens com segurança e conforto! Perfeita para acompanhar sua rotina, a Mochila Adidas Linear garante qualidade e estilo numa só peça.</dd>
+                        </dl>
+                    </div>
 
                     <div class="preco-e-icones2 m-preco-e-icones-9">
 
@@ -429,26 +488,28 @@
             </ul>
             <ul class="linha-de-produtos mobile-in">
                 <li>
-                    <a href="./detalhes-do-produto.html">
-                        <img class="imagem-do-item" src="./img/Rectangle 12.jpg" alt="">
+                    <div>
+                        <a href="./detalhes-do-produto.html">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 12.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Camiseta New Era...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Camiseta New Era...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,2</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src="./src/icones/Star 1.svg" alt="">
+                                        <p>4,2</p>
+                                    </div>
                                 </div>
+
                             </div>
+                        </a>
 
-                        </div>
-                    </a>
-
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Feita com algodão, a peça possui design em preto e traz o escudo do time estampado em destaque.</dd>
-                    </dl>
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Feita com algodão, a peça possui design em preto e traz o escudo do time estampado em destaque.</dd>
+                        </dl>
+                    </div>
 
                     <div class="preco-e-icones2 m-preco-e-icones-3">
 
@@ -466,24 +527,26 @@
                     </div>
                 </li>
                 <li>
-                    <a href="">
-                        <img class="imagem-do-item" src="./img/Rectangle 10.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 10.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Camisa Flamengo...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Camisa Flamengo...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,1</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src="./src/icones/Star 1.svg" alt="">
+                                        <p>4,1</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Confeccionada em poliéster, a peça possui design na cor preta, além de contar com o escudo do clube estampado em destaque na região do tórax.</dd>
-                    </dl>
+                        </a>
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Confeccionada em poliéster, a peça possui design na cor preta, além de contar com o escudo do clube estampado em destaque na região do tórax.</dd>
+                        </dl>
+                    </div>
 
                     <div class="preco-e-icones2 m-preco-e-icones-6">
 
@@ -503,25 +566,27 @@
             </ul>
             <ul class="linha-de-produtos mobile-in">
                 <li>
-                    <a href="#">
-                        <img class="imagem-do-item" src="./img/Rectangle 7.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 7.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Mochila Adidas Li...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Mochila Adidas Li...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,5</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src="./src/icones/Star 1.svg" alt="">
+                                        <p>4,5</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
 
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Leve todos os seus itens com segurança e conforto! Perfeita para acompanhar sua rotina, a Mochila Adidas Linear garante qualidade e estilo numa só peça.</dd>
-                    </dl>
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Leve todos os seus itens com segurança e conforto! Perfeita para acompanhar sua rotina, a Mochila Adidas Linear garante qualidade e estilo numa só peça.</dd>
+                        </dl>
+                    </div>
 
                     <div class="preco-e-icones2 m-preco-e-icones-9">
 
@@ -539,25 +604,29 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">
-                        <img class="imagem-do-item" src="./img/Rectangle 5.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <img class="imagem-do-item" src="./src/imagens/catalogo e produtos/Rectangle 5.jpg" alt="">
 
-                        <div class="descricao-do-item">
-                            <div class="titulo-do-item">
-                                <h2>Boné Aba Curva...</h2>
+                            <div class="descricao-do-item">
+                                <div class="titulo-do-item">
+                                    <h2>Boné Aba Curva...</h2>
 
-                                <div class="avaliacao-do-item">
-                                    <img src="./icon/Star 1.svg" alt="">
-                                    <p>4,0</p>
+                                    <div class="avaliacao-do-item">
+                                        <img src="./src/icones/Star 1.svg" alt="">
+                                        <p>4,0</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                    </a>
-                    <dl class="mais-detalhes">
-                        <dt>mais detalhes</dt>
-                        <dd class="descricao-detalhadada-do-item">Clássico e confortável, o boné Nike Sportswear Heritage Heritage86 apresenta um design de seis painéis feito com tecido de sarja e um fechamento ajustável.</dd>
-                    </dl>
+                            </div>
+                        </a>
+
+                        <dl class="mais-detalhes">
+                            <dt>mais detalhes</dt>
+                            <dd class="descricao-detalhadada-do-item">Clássico e confortável, o boné Nike Sportswear Heritage Heritage86 apresenta um design de seis painéis feito com tecido de sarja e um fechamento ajustável.</dd>
+                        </dl>
+
+                    </div>
                     <div class="preco-e-icones2 m-preco-e-icones-9">
                         <p class="desconto-do-item">R$ 119,90</p>
 
@@ -575,19 +644,19 @@
                     </div>
                 </li>
             </ul>
-
         </div>
 
         <div class="carregar-mais">
             <a href="#">Carregar mais</a>
-            <a href="#"><img src="./icon/Vector 4.svg" alt=""></a>
+            <a href="#"><img src="./src/icones/Vector 4.svg" alt=""></a>
         </div>
     </section>
+
     <footer>
         <div class="corpo-do-footer">
             <div class="conteudo-do-footer">
                 <div class="logo">
-                    <a href="#"><img src="./icon/logo.svg" alt=""></a>
+                    <a href="#"><img src="./src/icones/logo.svg" alt=""></a>
                 </div>
                 <div class="contato">
                     <h2>CONTATO</h2>
@@ -601,9 +670,9 @@
                     <div class="divisoria-footer"></div>
 
                     <div class="redes-sociais">
-                        <a href="#"><img src="./icon/instagram.svg" alt=""></a>
-                        <a href="#"><img src="./icon/facebook.svg" alt=""></a>
-                        <a href="#"><img src="./icon/youtube.svg" alt=""></a>
+                        <a href="#"><img src="./src/icones/instagram.svg" alt=""></a>
+                        <a href="#"><img src="./src/icones/facebook.svg" alt=""></a>
+                        <a href="#"><img src="./src/icones/youtube.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="informacoes">
