@@ -252,7 +252,7 @@ body {
     outline: none;
     text-align: start;
     box-shadow: none;
-    background: url('../../icon/Vector\ 1.svg') no-repeat right center;
+    background: url('../../icones/Vector\ 1.svg') no-repeat right center;
     background-position: right 50%;
     background-size: 10px;
     background-color: #000000;
@@ -322,13 +322,13 @@ body {
     width: 25px;
     height: 25px;
     display: block;
-    background-image: url('../../icon/icon\ heart.svg');
+    background-image: url('../../icones/icon\ heart.svg');
     background-size: cover;
     cursor: pointer;
 }
 
 .adicionar-aos-favoritos:checked+.checkbox-coracao-label {
-    background-image: url('../../icon/icon\ heart\ filled.svg');
+    background-image: url('../../icones/icon\ heart\ filled.svg');
 }
 
 /* checkbox bandeira */
@@ -340,13 +340,13 @@ body {
     width: 25px;
     height: 25px;
     display: block;
-    background-image: url('../../icon/icon\ flag.svg');
+    background-image: url('../../icones/icon\ flag.svg');
     background-size: cover;
     cursor: pointer;
 }
 
 .adicionar-aos-itens-salvos:checked+.checkbox-bandeira-label {
-    background-image: url('../../icon/icon\ flag\ filled.svg');
+    background-image: url('../../icones/icon\ flag\ filled.svg');
 }
 
 .fim-do-produto-icones a {
@@ -459,13 +459,13 @@ body {
     height: 16px;
     display: inline-block;
     gap: 10px;
-    background-image: url('../../icon/icon\ heart.svg');
+    background-image: url('../../icones/icon\ heart.svg');
     background-size: cover;
     cursor: pointer;
 }
 
 .comentario-util:checked+.checkbox-coracao-label-2::before {
-    background-image: url('../../icon/icon\ heart\ filled.svg');
+    background-image: url('../../icones/icon\ heart\ filled.svg');
 }
 
 .imagens-da-review {
@@ -680,13 +680,13 @@ body {
     width: 25px;
     height: 25px;
     display: block;
-    background-image: url('../../icon/icon\ heart.svg');
+    background-image: url('../../icones/icon\ heart.svg');
     background-size: cover;
     cursor: pointer;
 }
 
 .adicionar-aos-favoritos-item:checked+.checkbox-coracao-item-label {
-    background-image: url('../../icon/icon\ heart\ filled.svg');
+    background-image: url('../../icones/icon\ heart\ filled.svg');
 }
 
 /* checkbox cesta do item */
@@ -698,13 +698,13 @@ body {
     width: 22px;
     height: 22px;
     display: block;
-    background-image: url('../../icon/icon\ basket.svg');
+    background-image: url('../../icones/icon\ basket.svg');
     background-size: cover;
     cursor: pointer;
 }
 
 .adicionar-ao-carrinho:checked+.checkbox-carrinho-item-label {
-    background-image: url('../../icon/icon\ basket\ filled.svg');
+    background-image: url('../../icones/icon\ basket\ filled.svg');
 }
 
 @media (max-width: 768px) {
