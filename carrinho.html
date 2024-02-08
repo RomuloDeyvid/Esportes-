@@ -11,11 +11,44 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="src/css/reset.css">
         <link rel="stylesheet" href="src/css/carrinho.css">
+        <link rel="stylesheet" href="src/css/headerNav.css">
         
     </head>
 <body>
     <header>
-        
+
+        <nav id="navegaHeader">
+            <a href="#" class="logoEsporte navega">
+                <img src="src/icones/logo.svg" alt="Esportes Mais">
+            </a>
+
+            <div class="links desativar">
+                <li class="listaLink">
+                    <ul><a href="">Esportes</a></ul>
+                    <ul><a href="">Masculino</a></ul>
+                    <ul><a href="">Feminino</a></ul>
+                    <ul><a href="">Calçados</a></ul>
+                    <ul><a href="">Equipamentos</a></ul>
+                </li>
+            </div>
+            
+            <div class="iconePesquisa">
+                <div class="entradaPesquisa navega">
+                    <input placeholder="o que você procura?" name="pesquisarPagina" id="pesquisarPagina" type="text">
+                    <label class="labelPesquisarPagina" for="pesquisarPagina"><img src="src/icones/icon search.svg" alt="Lupa"></label>
+                </div>
+
+                <div class="iconesUsuario navega">
+                    <a class="favoritosCarrinho iconereferencia" href="#"><img src="src/icones/icon heart.svg" alt=""></a>
+                    <a class="usuario iconereferencia" href="#"><img src="src/icones/icon profile.png" alt=""></a>
+                    <div class="hamburguerClick iconereferencia">
+                        <img class="teste" src="src/icones/hamburguer.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
     </header>
 
     <div id="conteudo">
@@ -231,5 +264,6 @@
 
     <footer></footer>
     <script src="js/carrinho.js"></script>
+    <script src="js/headerNav.js"></script>
 </body>
 </html>

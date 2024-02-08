@@ -104,7 +104,6 @@ body {
 }
 
 header {
-    min-height: 2.1rem;
     width: 100%;
     background: #3DD5F3;
 }
@@ -115,9 +114,10 @@ footer {
     background: #3DD5F3;
 }
 
+
 /* -----------pagina---------- */
 #conteudo {
-    min-height: calc(100% - 9.1rem);
+    min-height: calc(100% - 9.6rem);
     width: 100%;
 }
 /* -----------pagina---------- */
