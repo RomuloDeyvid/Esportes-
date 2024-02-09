@@ -132,7 +132,7 @@ footer {
     color: #fff;
 }
 
-.numeroentrada::-webkit-inner-spin-button {
+.numeroEntrada::-webkit-inner-spin-button {
     all: unset; 
 }
 
