@@ -1,0 +1,83 @@
+/* -----------------resumo dos item pedidos---------------- */
+.resumo {
+    display: flex;
+    min-width: 7rem;
+    
+    justify-content: space-between;
+    align-items: start;
+    height: 11.5rem;
+    padding: 2rem 1.2rem 0;
+}
+
+.resumoPedido {
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resumoPedido span {
+    color: var(--C06, #9C9C9C);
+    font-family: "Open Sans";
+    font-size: .625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#maisInfo {
+    border: none;
+    color: #737373;
+    text-align: right;
+    font-family: "Open Sans Hebrew";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.finalizar {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.3rem;
+}
+
+.btnFinalizar {
+    justify-self: end;
+    border-radius: 0.3125rem;
+    background:  #111;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 1.3rem;
+    width: 7rem;
+    border: none;
+}
+
+.valorTotal {
+    color: #000;
+    font-family: "Montserrat";
+    text-align: right;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.valorParcela {
+    color: #737373;
+    text-align: right;
+    font-family: "Open Sans Hebrew";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* -----------------resumo dos item pedidos---------------- */

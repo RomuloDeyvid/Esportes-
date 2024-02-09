@@ -1,0 +1,80 @@
+/* -------------------Frete--------------------------- */
+.frete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.4rem;
+    background: #3DD5F3;
+    border-radius: 0.3125rem;
+    gap: 1rem;
+}
+
+.freteTexto {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.freteTexto span {
+    color:  #111;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.freteInput {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.freteInput input{
+    width: 5.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    border: 0.5px solid  #9C9C9C;
+    background:  #FFF;
+    text-align: center;
+    color:  #9C9C9C;
+    text-align: start;
+    font-family: "Montserrat";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 0.5rem;
+}
+
+.freteInput a{
+    align-items: center;
+    justify-content: center;
+}
+
+.freteInput a img{
+    width: 0.6875rem;
+    height: 0.6875rem;
+}
+
+#freteEntrada::-webkit-inner-spin-button {
+    all: unset; 
+}
+
+.freteCep a{
+    color:  #111;
+    text-align: start;
+    font-family: "Montserrat";
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 1rem;
+}
+/* -------------------Frete--------------------------- */

@@ -1,0 +1,80 @@
+@media (min-width: 770px) {
+
+    header {
+        height: 6rem;
+    }
+    footer {
+        height: 30.75rem;
+    }
+
+    #conteudo {
+        display: flex;
+        justify-content: center;
+        min-height: calc(100% - 36.75rem);
+        width: 100%;
+    }
+
+    .tituloPagina {
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+    .areaDados, .areaEntrega {
+        font-size: 1.25rem;
+    }
+
+    .entradaEstilo, .labelEstilo {
+        font-size: 1.25rem;
+    }
+
+    .entradaEstilo {
+        height: 3.75rem;
+    }
+
+    .btnSubmit {
+        font-size: 1.5rem;
+        width: 12.5rem;
+        height: 3.688rem;
+    }
+
+    .cadastro {
+        max-width: 72.5rem;
+    }
+
+    .termos {
+        flex-direction: column;
+    }
+
+    #contrato{
+        width: 1rem;
+    }
+/* --------------grid area ---------------- */
+    .areaDadosGrid {
+        grid-template-areas:
+            "areaDados areaDados"
+            "areaNome areaCpf"
+            "areaEmail areaEmail"
+            "areaSenha ."
+        ;
+    }
+
+    .dadosPessoais {
+        grid-template-columns:  minmax(60%, 1fr)  minmax(80px, 1fr);
+    }
+
+    .entrega {
+        grid-template-columns:  minmax(100px, 460px)  minmax(100px, 460px);
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .areaEntregaGrid {
+        grid-template-areas: 
+        "areaEntrega areaEntrega"
+        "areaCep areaNumero"
+        "areaEndereço areaBairro"
+        "areaCidade areaEstado"
+        ;
+    }
+/* --------------grid area ---------------- */
+}
