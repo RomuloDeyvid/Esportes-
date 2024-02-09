@@ -1,4 +1,21 @@
-@media (max-width: 360px) {
+@media (max-width: 460px) {
+
+  .logo__cliente{
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .quem-e-o-cliente{
+    min-width: 150px;
+    text-align: start;
+  }
+
+  .logo__cliente img{
+    height: 100%;
+    width: 100%;
+  }
+
   main {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -8,7 +25,7 @@
   .já-sou-cliente .titulo {
     font-family: "Montserrat";
     color: #111111;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 57.6px;
     font-weight: 700;
   }
@@ -89,7 +106,8 @@
     gap: 10px;
     margin-top: 16px;
     margin-left: 10%;
-    width: 35%;
+    width: 80%;
+    margin: auto;
   }
 
   .cliente .avatar-image {
@@ -117,7 +135,15 @@
     height: 40px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 360px) {
+  .logo__cliente {
+  }
+
+  .quem-e-o-cliente{
+    min-width: 100px;
+    text-align: start;
+  }
+  
   main {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -147,7 +173,6 @@
     margin-top: 12px;
     margin-bottom: 24px;
     border-radius: 10px;
-    padding: 12px, 24px, 12px, 24px;
   }
   main input {
     display: block;
@@ -208,10 +233,9 @@
   .container__cliente {
     display: flex;
     text-align: center;
-    gap: 30px;
+    justify-content: space-between;
     margin: auto;
-    width: 50%;
-    margin-top: 16px;
+    width: 80%;
   }
 
   .cliente .avatar-image {

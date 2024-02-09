@@ -1,8 +1,25 @@
+body {
+  min-height: 100vh;
+}
+
 main {
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
+
+.cliente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quem-e-o-cliente{
+  min-width: 100px;
+}
+
 .já-sou-cliente .titulo {
   font-family: "Montserrat";
   color: #111111;
@@ -106,10 +123,11 @@ main input {
 }
 .container__cliente {
   display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   gap: 30px;
   margin-top: 16px;
-  margin-left: 36%;
   width: 35%;
 }
 
