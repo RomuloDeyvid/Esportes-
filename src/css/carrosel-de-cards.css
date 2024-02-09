@@ -34,7 +34,8 @@
     --card-width: 480px;
     --card-max-width: 480px;
     --card-height: 640px;
-    --carousel-min-width: 600px;
+    --carousel-min-width: 100px;
+    margin-left: calc((50vw - var(--carousel-min-width) - 40px) / 2);
     z-index: 1;
     position: relative;
     margin: 0 auto;
@@ -65,9 +66,19 @@
     color: #3DD5F3;
   }
   
-  @media screen and (max-width: 640px) {
+  @media (min-width: 366px) and (max-width: 765px) {
     .card-carousel {
-      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+      --card-width: 240px;
+    --card-max-width: 240px;
+    --card-height: 320px;
+    --carousel-min-width-tablet: 50px;
+      margin-left: calc((15vw - var(--carousel-min-width-tablet) - 40px) / 2);
+    }
+    .subtitulo-do-container{
+      font-size: 15px;
+    }
+    .titulo-do-container{
+      font-size: 25px;
     }
   }
   
@@ -150,7 +161,7 @@
     background: #F7F7F7;
     width: 70%;
   }
-  @media screen and (max-width: 365px){
+  @media ( max-width: 365px){
     .sub-container-titulo{
         margin: 0.5em ;
       }
@@ -163,23 +174,24 @@
         margin-bottom: 1em;
       }
       .container {
-        padding: 10px 0;
+        padding: 5px 0;
         margin-top: 2em;
       }
+      
       .card-carousel {
-        --card-width: 0px;
-        --card-max-width: 0px;
-        --card-height: 216px;
-        --carousel-min-width: 0px;
-        margin: 10px 0px;
-        
+        --card-width: 120px;
+      --card-max-width: 120px;
+      --card-height: 160px;
+      --carousel-min-width-tablet: 25px;
+        margin-left: calc((7vw - var(--carousel-min-width-tablet) - 40px) / 2);
       }
+      
       .card-carousel .card {
     
         width: var(--card-width);
         max-width: var(--card-max-width);
         align-self: center;
-        min-width: 180px;
+        min-width: 130px;
         height: var(--card-height);
       }
       

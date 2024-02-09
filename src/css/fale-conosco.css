@@ -1,6 +1,6 @@
 .fale-conosco{
     width: 70%;
-    margin: auto;
+    margin: 5em auto;
 }
 .fale-conosco-esquerdo{
     background: linear-gradient(to bottom right, #199AAC, #014256);
@@ -10,7 +10,27 @@
 .fale-conosco-direito{
     width: 70%;
     background: #F7F7F7;
+    height: 600px;
 
+}
+.fale-conosco-direito-forms{
+    width: 80%;
+    margin: 4em auto;
+}
+.texto-forms-1{
+    width: 50%;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+.subtitulo-forms{
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+.texto-forms-2{
+    width: 50%;
+    margin-bottom: 0.5em;
 }
 .lista-fale-conosco{
     margin-left: 4em;
@@ -32,4 +52,26 @@
     font-family: var(--fonte-secundaria);
     font-size: 16px;
     color: #ccc;
+}
+.form-control{
+    color: #717171;
+    background-color: #DEDEDE;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+}
+.form-mensagem{
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: start;
+}
+.botao-forms{
+    background-color: #014256;
+    color: #fff;
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    font-weight: 700;
+    width: 250px;
+    height: 55px;
+    margin-top: 1em;
 }
