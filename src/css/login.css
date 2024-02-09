@@ -1,0 +1,138 @@
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.já-sou-cliente .titulo {
+  font-family: "Montserrat";
+  color: #111111;
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 700;
+}
+.já-sou-cliente .promoção {
+  font-family: "Open Sans Hebrew";
+  color: #e40d0d;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 10px;
+}
+.button-entrar__já-sou-cliente {
+  background: #098aa4;
+  color: #fff;
+  height: 48px;
+  border: none;
+  margin: auto;
+  width: 35%;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  padding: 12px, 24px, 12px, 24px;
+}
+main input {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #a09b9b;
+  border-radius: 10px;
+  margin: auto;
+  width: 35%;
+  height: 48px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.input-container {
+  position: relative;
+}
+.email-label {
+  font-family: "Open Sans Hebrew";
+  color: #bebaba;
+  font-size: 16px;
+  margin-left: 34%;
+  position: absolute;
+  top: 14%;
+  left: -10px;
+  pointer-events: none; /* Evita que o label seja clicável */
+}
+.senha-label {
+  font-family: "Open Sans Hebrew";
+  color: #bebaba;
+  font-size: 16px;
+  display: flex;
+  margin-left: 34%;
+  position: absolute;
+  top: 73%;
+  left: -10px;
+  pointer-events: none;
+}
+
+.linha {
+  margin: auto;
+  width: 35%;
+}
+.formas-de-entrar a {
+  color: #404040;
+  text-decoration: none;
+}
+.formas-de-entrar .button-entrar-com {
+  display: block;
+  background-color: #fff;
+  margin: auto;
+  width: 35%;
+  height: 48px;
+  border-radius: 10px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.button-entrar-com p {
+  color: #404040;
+}
+
+.recuperando-a-senha a,
+.cadastro a {
+  color: #000;
+  line-height: 24px;
+}
+.cadastro {
+  margin-top: 10px;
+}
+.comentario-de-satisfação /* do cliente */ {
+  color: #111111;
+  font-family: "Open Sans Hebrew";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.container__cliente {
+  display: flex;
+  text-align: center;
+  gap: 30px;
+  margin-top: 16px;
+  margin-left: 36%;
+  width: 35%;
+}
+
+.cliente .avatar-image {
+  margin-top: -20px;
+  width: 56px;
+  height: 56px;
+}
+.nome {
+  font-family: "Open Sans Hebrew";
+  color: #111111;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.cliente .profissão {
+  font-family: "Open Sans Hebrew";
+  color: #717171;
+  font-size: 10px;
+  line-height: 15px;
+}
+.vertical-line {
+  border-left: 1px solid black;
+  display: inline-block;
+  height: 40px;
+}
