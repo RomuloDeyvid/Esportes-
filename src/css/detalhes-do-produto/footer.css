@@ -132,95 +132,96 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  footer {
-    min-height: 7.0625rem;
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--C11);
-    margin-top: 80px;
-}
-
-.logo{
-    min-height: 10rem;
-    min-width: 10rem;
-}
-
-.logo a img {
-    height: 100%;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
     footer {
-        height: 7rem;
+        min-height: 7.0625rem;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--C11);
+        margin-top: 60px;
     }
 
-    .logo{
-        min-height: 5rem;
-        min-width: 5rem;
+    .logo {
+        min-height: 10rem;
+        min-width: 10rem;
     }
 
     .logo a img {
-        height: 13px;
-    }
-
-    .corpo-do-footer {
-        width: 15.625rem;
-        width: 250px;
-    }
-
-    .conteudo-do-footer{
-        padding: 0;
-        gap: 1rem;
+        height: 100%;
         width: 100%;
-        height: 60%;
     }
 
-    .conteudo-do-footer h2 {
-        font-size: 8px;
-    }
+    @media (max-width: 768px) {
+        footer {
+            height: 7rem;
+        }
 
-    .conteudo-do-footer a {
-        font-size: 6.5px;
-    }
+        .logo {
+            min-height: 5rem;
+            min-width: 5rem;
+        }
 
-    .contato {
-        max-width: 5.625rem;
-        max-width: 90px;
-    }
+        .logo a img {
+            height: 13px;
+        }
 
-    .endereco {
-        line-height: 10px;
-    }
+        .corpo-do-footer {
+            width: 15.625rem;
+            width: 250px;
+        }
 
-    .conteudo-do-footer h2 {
-        margin-bottom: 5px;
-    }
+        .conteudo-do-footer {
+            padding: 0;
+            gap: 1rem;
+            width: 100%;
+            height: 60%;
+        }
 
-    .conteudo-do-footer a {
-        margin-top: 2px;
-    }
+        .conteudo-do-footer h2 {
+            font-size: 8px;
+        }
 
-    .informacoes a {
-        margin-top: 5px;
-    }
+        .conteudo-do-footer a {
+            font-size: 6.5px;
+        }
 
-    .divisoria-footer {
-        margin-top: 2px;
-        border-top: 0.5px solid var(--C12);
-    }
+        .contato {
+            max-width: 5.625rem;
+            max-width: 90px;
+        }
 
-    .redes-sociais {
-        display: none;
-    }
+        .endereco {
+            line-height: 10px;
+        }
 
-    .direitos-reservados {
-        margin-top: 1.25rem;
-        margin-top: 20px;
-        font-size: 6.5px;
-    }
+        .conteudo-do-footer h2 {
+            margin-bottom: 5px;
+        }
 
-    .conteudo-do-footer {
-        margin-top: 13px;
+        .conteudo-do-footer a {
+            margin-top: 2px;
+        }
+
+        .informacoes a {
+            margin-top: 5px;
+        }
+
+        .divisoria-footer {
+            margin-top: 2px;
+            border-top: 0.5px solid var(--C12);
+        }
+
+        .redes-sociais {
+            display: none;
+        }
+
+        .direitos-reservados {
+            margin-top: 1.25rem;
+            margin-top: 20px;
+            font-size: 6.5px;
+        }
+
+        .conteudo-do-footer {
+            margin-top: 13px;
+        }
     }
 }
