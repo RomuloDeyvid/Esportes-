@@ -1,17 +1,16 @@
 @media (max-width: 460px) {
-
-  .logo__cliente{
+  .logo__cliente {
     height: 20px;
     width: 100%;
     margin-top: 10px;
   }
 
-  .quem-e-o-cliente{
+  .quem-e-o-cliente {
     min-width: 150px;
     text-align: start;
   }
 
-  .logo__cliente img{
+  .logo__cliente img {
     height: 100%;
     width: 100%;
   }
@@ -36,17 +35,7 @@
     line-height: 27px;
     margin-top: 0;
   }
-  main input {
-    display: block;
-    background-color: #fff;
-    margin: auto;
-    width: 60%;
-    height: 48px;
-    border-radius: 10px;
-    border-radius: 10px;
-    margin-top: 24px;
-    margin-bottom: 12px;
-  }
+
   .button-entrar__já-sou-cliente {
     background: #098aa4;
     color: #fff;
@@ -136,14 +125,11 @@
   }
 }
 @media screen and (max-width: 768px) and (min-width: 360px) {
-  .logo__cliente {
-  }
-
-  .quem-e-o-cliente{
+  .quem-e-o-cliente {
     min-width: 100px;
     text-align: start;
   }
-  
+
   main {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -177,13 +163,37 @@
   main input {
     display: block;
     background-color: #fff;
+    border: 1px solid #a09b9b;
+    border-radius: 10px;
     margin: auto;
     width: 60%;
     height: 48px;
-    border-radius: 10px;
-    border-radius: 10px;
     margin-top: 24px;
     margin-bottom: 12px;
+  }
+  .input-container {
+    position: relative;
+  }
+  .email-label {
+    font-family: "Open Sans Hebrew";
+    color: #bebaba;
+    font-size: 16px;
+    margin-left: 34%;
+    position: absolute;
+    top: 14%;
+    left: -80px;
+    pointer-events: none; /* Evita que o label seja clicável */
+  }
+  .senha-label {
+    font-family: "Open Sans Hebrew";
+    color: #bebaba;
+    font-size: 16px;
+    display: flex;
+    margin-left: 34%;
+    position: absolute;
+    top: 73%;
+    left: -80px;
+    pointer-events: none;
   }
 
   .linha {
