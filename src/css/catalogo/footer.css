@@ -35,7 +35,6 @@ footer {
     background-color: var(--A01);
     width: 100%;
     min-height: 30.75rem;
-    height: 492px;
     display: flex;
     justify-content: center;
 }
@@ -51,24 +50,11 @@ footer {
     font-size: 1.125rem;
     color: var(--C10);
     font-family: var(--montserrat);
-    width: 1155px;
-}
-
-.conteudo-do-footer {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    color: var(--C10);
-    font-family: var(--montserrat);
-    padding: 0 2rem;
-    gap: 2rem;
 }
 
 .conteudo-do-footer h2 {
     font-weight: 500;
     font-size: 1.5rem;
-    font-size: 24px;
     letter-spacing: 0.015em;
     margin-bottom: 2rem;
     color: var(--C12);
@@ -78,7 +64,6 @@ footer {
 .contato a,
 .redes-sociais {
     margin-top: 1rem;
-    text-decoration: none;
 }
 
 .informacoes a {
@@ -89,7 +74,6 @@ footer {
 
 .redes-sociais {
     max-width: 10rem;
-    max-width: 160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,7 +82,6 @@ footer {
 .contato {
     width: 100%;
     max-width: 22.5rem;
-    max-width: 360px;
 }
 
 .contato a {
@@ -114,8 +97,6 @@ footer a:hover {
 .endereco {
     max-width: 16.25rem;
     line-height: 1.875rem;
-    max-width: 260px;
-    line-height: 30px;
 }
 
 .divisoria-footer {
@@ -132,32 +113,8 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  footer {
-    min-height: 7.0625rem;
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--C11);
-    margin-top: 80px;
-}
-
-.logo{
-    min-height: 10rem;
-    min-width: 10rem;
-}
-
-.logo a img {
-    height: 100%;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
     footer {
-        height: 7rem;
-    }
-
-    .logo{
-        min-height: 5rem;
-        min-width: 5rem;
+        min-height: 7.0625rem;
     }
 
     .logo a img {
@@ -166,14 +123,6 @@ footer a:hover {
 
     .corpo-do-footer {
         width: 15.625rem;
-        width: 250px;
-    }
-
-    .conteudo-do-footer{
-        padding: 0;
-        gap: 1rem;
-        width: 100%;
-        height: 60%;
     }
 
     .conteudo-do-footer h2 {
@@ -186,7 +135,6 @@ footer a:hover {
 
     .contato {
         max-width: 5.625rem;
-        max-width: 90px;
     }
 
     .endereco {
@@ -216,7 +164,6 @@ footer a:hover {
 
     .direitos-reservados {
         margin-top: 1.25rem;
-        margin-top: 20px;
         font-size: 6.5px;
     }
 
