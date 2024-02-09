@@ -1,0 +1,53 @@
+/* --------------Endereço------------- */
+
+.areaEntrega{
+    grid-area: areaEntrega;  
+    margin-top: 2rem;
+}
+
+.areaEndereço{
+    grid-area: areaEndereço;  
+    display: flex;
+    flex-direction: column;  
+}
+
+.areaCep{
+    grid-area: areaCep;  
+    display: flex;
+    flex-direction: column;  
+}
+
+.areaBairro{
+    grid-area: areaBairro; 
+    display: flex;
+    flex-direction: column;   
+}
+
+.areaNumero{
+    grid-area: areaNumero; 
+    display: flex;
+    flex-direction: column;   
+}
+
+.areaCidade{
+    grid-area: areaCidade; 
+    display: flex;
+    flex-direction: column;   
+}
+
+.areaEstado{
+    grid-area: areaEstado;  
+    display: flex;
+    flex-direction: column;  
+}
+
+.areaEntregaGrid {
+    grid-template-areas: 
+    "areaEntrega areaEntrega"
+    "areaEndereço areaCep"
+    "areaBairro areaNumero"
+    "areaCidade areaEstado"
+    ;
+}
+
+/* --------------Endereço------------- */

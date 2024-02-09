@@ -1,0 +1,44 @@
+:root{
+    --cor-primaria: #3DD5F3;
+    --fonte-principal: 'Open Sans', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-tamanho: 1em;
+    --fonte-cor: #1d1d1d;
+}
+
+.nav-bar{
+    background-color: var(--cor-primaria);
+    font-size: var(--fonte-tamanho);
+    font-family: var(--fonte-principal);
+    color: var(--fonte-cor);
+    font-weight: 400;
+    height: 5em;
+}
+.lista-nav{
+    padding-right: 3em;
+}
+.imagem_logo{
+    height: 2em;
+    padding-right: 1em;
+}
+.icones{
+    width: 20px;
+    gap: 1em;
+}
+.barra-pesquisa{
+    height: 1.5em;
+    width: 300px;
+}
+.barra-pesquisa-img::placeholder{
+    width: 100%;
+    background:url("../icones/icon\ search.png") no-repeat;
+    background-position: 22em;
+    font-size: 12px;
+    font-weight: 400;
+}
+.formulario{
+    width: 300px;
+    border: none;
+    border-radius: 7px;
+    padding-left: 0.5em;
+}
