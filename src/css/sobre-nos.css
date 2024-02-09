@@ -1,9 +1,10 @@
 .sobre-nos {
     overflow: hidden;
     padding: 20px;
-    margin-top: 2em;
+    margin-top: 10em;
     background: #111;
-    width: 70%; 
+    width: 70%;
+    height: 1350px; 
     margin: auto;
 }
 
@@ -19,7 +20,8 @@
     height: 240px;
     padding: 20px;
     position: relative;
-    margin: auto;
+    margin: 4em auto;
+    
 }
 
 .sobre-nos-1::before {
@@ -43,4 +45,45 @@
 .texto-sobre-nos{
     font-size: 24px;
     color: #B2B2B2;
+}
+.sobre-nos-2{
+    width: 1160px;
+    height: 240px;
+    padding: 20px;
+    position: relative;
+    margin: 4em auto;
+}
+.sobre-nos-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imagens/fotos-sobre-nós/01.jpg');
+    background-size: cover;
+    opacity: 0.05; /* Opacidade da imagem de fundo */
+}
+.sobre-nos-3{
+    width: 1160px;
+    height: 450px;
+    padding: 20px;
+    position: relative;
+    margin: 4em auto;
+}
+.sobre-nos-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imagens/fotos-sobre-nós/03.jpg');
+    background-size: cover;
+    opacity: 0.05; /* Opacidade da imagem de fundo */
+}
+.titulo-lista{
+    font-size: 28px;
+    color: #DEDEDE;
+    padding: 0.5em;
 }

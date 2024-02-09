@@ -1,0 +1,33 @@
+.nossos-clientes{
+    width: 70%;
+    margin: auto;
+}
+.imagem-nossos-clientes{
+    width: 50%;
+}
+.container-nossos-clientes{
+    /* Para navegadores que suportam */
+    background: linear-gradient(to bottom right, #199AAC, #014256);
+    /* Para navegadores que não suportam */
+}
+.texto-nossos-clientes{
+    font-size: 20px;
+    color: #EDEDED;
+    width: 70%;
+    margin: 7em auto;
+    font-family: var(--fonte-principal);
+}
+.nome-nossos-clientes{
+    font-family: var(--fonte-secundaria);
+    font-size: 22px;
+    color: #DEDEDE;
+    margin-left: 19em;
+    font-weight: 600;
+}
+.funcao-nossos-clientes{
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+    color: #DEDEDE;
+    margin-left: 14.4em;
+    font-weight: 300;
+}

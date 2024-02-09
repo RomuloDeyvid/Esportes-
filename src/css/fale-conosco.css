@@ -1,0 +1,35 @@
+.fale-conosco{
+    width: 70%;
+    margin: auto;
+}
+.fale-conosco-esquerdo{
+    background: linear-gradient(to bottom right, #199AAC, #014256);
+    width: 30%;
+    height: 600px;
+}
+.fale-conosco-direito{
+    width: 70%;
+    background: #F7F7F7;
+
+}
+.lista-fale-conosco{
+    margin-left: 4em;
+    padding-top: 5em;
+    
+}
+.logo-branco{
+    width: 130px;
+    height: 30px;
+    margin-bottom: 1em;
+}
+.lista-fale-conosco-1{
+    margin-bottom: 2em;
+}
+.lis-restantes{
+    margin-left: 1.8em;
+}
+.texto-fale-conosco{
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    color: #ccc;
+}
