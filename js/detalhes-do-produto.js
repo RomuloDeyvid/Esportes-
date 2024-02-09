@@ -21,5 +21,23 @@ const initSlider = () => {
     });
 }
 
+const radios = document.querySelectorAll('.bloco-de-cor');
+
+const cores = {
+    'checkbox-bloco-de-cor': 'Preta',
+    'checkbox-bloco-de-cor-2': 'Vermelho',
+    'checkbox-bloco-de-cor-3': 'Branco'
+};
+
+const textoCorSelecionada = document.querySelector('.cor-selecionada');
+
+radios.forEach(radio => {
+    radio.addEventListener('click', function() {
+        const corSelecionada = this.getAttribute('id');
+
+        const texto = cores[corSelecionada];
+        textoCorSelecionada.innerHTML = `<strong>Cor: </strong>${texto}`;
+    });
+});
 
 window.addEventListener("load", initSlider);
